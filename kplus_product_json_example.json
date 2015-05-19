@@ -1,0 +1,88 @@
+{
+    "active": true,
+    "barcodes": [
+        "9771848128003"
+    ],
+    "catch_weight": 0,
+    "categories": [
+        {
+            "category_path": "/categories/60005042/mjesecni-tisak",
+            "id": 60005042,
+            "name": "Mjese\u010dni tisak"
+        },
+        {
+            "category_path": "/categories/60005039/tisak",
+            "id": 60005039,
+            "name": "Tisak"
+        },
+        {
+            "category_path": "/categories/60005032/kiosk",
+            "id": 60005032,
+            "name": "Kiosk"
+        }
+    ],
+    "code": "05311990",
+    "description": null,
+    "favorite": false,
+    "has_image": true,
+    "icons": [],
+    "id": 60049488,
+    "image_l": "/images/products/053/05311990l.gif",
+    "image_m": "/images/products/053/05311990m.gif",
+    "image_path": "/images/products/053/05311990.gif",
+    "image_s": "/images/products/053/05311990s.gif",
+    "lifetime": null,
+    "manufacturer": "TISAK TRGOVA\u010cKO d.d.",
+    "min_order_quantity": 1.0,
+    "name": "Aktual",
+    "netto_weight_factor": null,
+    "price": {
+        "amount": 1700,
+        "currency": "Kn",
+        "formatted_price": "17,00 Kn"
+    },
+    "price_unit_of_measure": "Ko",
+    "product_details_path": "/products/60049488",
+    "product_path": "/products/60049488/aktual",
+    "product_uoms": [
+        {
+            "barcode": null,
+            "dimensions": null,
+            "gross_weight": null,
+            "id": 65683301,
+            "name": "KO",
+            "netto_weight": null,
+            "smaller_unit": null,
+            "smaller_unit_factor": null,
+            "volume": null
+        },
+        {
+            "barcode": null,
+            "dimensions": null,
+            "gross_weight": null,
+            "id": 65683302,
+            "name": "kt",
+            "netto_weight": null,
+            "smaller_unit": "KO",
+            "smaller_unit_factor": 1,
+            "volume": null
+        },
+        {
+            "barcode": null,
+            "dimensions": null,
+            "gross_weight": null,
+            "id": 65683303,
+            "name": "pl",
+            "netto_weight": null,
+            "smaller_unit": "kt",
+            "smaller_unit_factor": 1,
+            "volume": null
+        }
+    ],
+    "quantity_step": 1.0,
+    "requires_deposit_packaging": false,
+    "sales_unit_of_measure": "Ko",
+    "sliceable": false,
+    "statistical_price": "17,00 Kn / Ko",
+    "thumbnail_image_path": "/images/products/053/05311990s.gif"
+}

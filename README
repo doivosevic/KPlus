@@ -1,0 +1,133 @@
+
+
+************************
+*******           ******
+***      shopper     ***
+*******           ******
+************************
+
+
+27.2.2015. 12:00
+
+The parsing is to be done from here:
+
+http://online.konzum.hr/#!/categories/60004323/hrana?show=all&sort_field=name&sort=nameAsc&max_price=22290&page=1&per_page=5430
+
+A very important feature is that the "per_page" can be freely changed.
+
+-> 
+	The XHR requests carry all the information needed.
+	They seem to have some sort of protection from foreign requests.
+	The only protection so far seems to be the "time" key provided with the link which I have yet to guess.
+	So for instance http://online.konzum.hr/v2/categories?time=1425038753938
+	It provides us with the information which categories and subcategories exist.
+
+	Potential defense mechanisms:
+	_ws-rails_session_id
+	Phusion Passenger 4.0.41
+	this "time" which is somehow extracted
+	X-Auth-Token probably from "Phusion Passenger"
+	"WEBSHOP_COOKIE_online.konzum.hr"
+	"konzum_hr_wsm_auth_token"
+
+	Somehow I am afraid that all of the below has to be correct: 
+		{
+              "name": "Cookie",
+              "value": "_ws_ss=true; cw-cookieInfo=true; _ws_vt=grid; XSRF-TOKEN=5gDngo6DZowKTeOsijXMcHGxLw71nG8oRz%2BNYhXbCyI%3D; _ga=GA1.2.87207288.1424964444; _gat=1; WEBSHOP_COOKIE_online.konzum.hr=R3384563411; konzum_hr_wsm_auth_token=802fee34144af5913e7684a90624f487; _ws-rails_session_id=BAh7DUkiD3Nlc3Npb25faWQGOgZFRkkiJTY4YjdkNjJiZTk3YWJhYTMzNzA2MWUxZjMyY2NiNjVlBjsAVEkiFWN1cnJlbnRfbG9jYXRpb24GOwBGSSICLgFodHRwOi8vb25saW5lLmtvbnp1bS5oci92Mi9jYXRlZ29yaWVzLzYwMDA2ODYxL3Byb2R1Y3RzP2NhdGVnb3J5X2lkPTYwMDA2ODYxJmZpbHRlciU1QnByaWNlJTVEJTVCbWF4JTVEPTExMCZmaWx0ZXIlNUJwcmljZSU1RCU1Qm1pbiU1RD0wJmZpbHRlciU1QnNob3clNUQ9YWxsJmZpbHRlciU1QnNvcnQlNUQ9bmFtZUFzYyZmaWx0ZXIlNUJzb3J0X2ZpZWxkJTVEPW5hbWUmZmlsdGVyJTVCc29ydF90eXBlJTVEPWFzYyZmaWx0ZXIlNUJzdWJjYXRlZ29yeV9pZCU1RD0mcGFnZT0zJnBlcl9wYWdlPTI0JnRpbWU9MTQyNTAzNzUwNTgxMAY7AEZJIhhwcm9kdWN0c19zb3J0X2ZpZWxkBjsARkkiCW5hbWUGOwBUSSIXcHJvZHVjdHNfc29ydF90eXBlBjsARkkiCGFzYwY7AFRJIhx0b3BfcHJvZHVjdHNfc29ydF9maWVsZAY7AEZJIg9wb3B1bGFyaXR5BjsAVEkiG3RvcF9wcm9kdWN0c19zb3J0X3R5cGUGOwBGSSIIYXNjBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMTVnRG5nbzZEWm93S1RlT3NpalhNY0hHeEx3NzFuRzhvUnorTlloWGJDeUk9BjsARkkiFnByZXZpb3VzX2xvY2F0aW9uBjsARkkiXmh0dHA6Ly9vbmxpbmUua29uenVtLmhyL3YyL2hpbnRzP2hpbnRfaWQ9NjAwMDY4NjEmaGludF90eXBlPWNhdGVnb3JpZXMmdGltZT0xNDI1MDM3NDgwMTIxBjsARg%3D%3D--782ead7772143c9e1466e2049aad5c7e2bfd3e78"
+           }
+
+-------------------------------------
+27.2.2015. 22:26
+UPDATE:
+	Well, as it turns out, it was a bit easier than expected.
+	First of all, some useful reads:
+	http://en.wikipedia.org/wiki/XMLHttpRequest
+	http://www.w3.org/TR/cors/
+	http://axilis.com/ <- creators of the website
+	Fun fact: the creators of the latest Konzum website have been participants in a project which parsed their older website.
+	http://www.html5rocks.com/en/tutorials/file/xhr2/
+	http://en.wikipedia.org/wiki/Cross-site_request_forgery
+	https://www.linkedin.com/profile/view?id=130331247
+
+	All in all, there were no authentication issues. No authentication was neccessary.
+	My guess would be that it is not proper to make a xhr request by just running it from the browser but has to be run as a script.
+	All my "cookies" and "user-agent" field were rejected when making a request.
+	The main thing was to find a nodejs xhr library and there seems to be a "xhr2" lib which had done just that.
+	After that and some googling I found a code example and viola, I have 1200 Konzum items in my file with all the info I'd need.
+
+---------------------------------------
+26.3.2015. 9:48
+UPDATE:
+	Can't believe it's already been a month.
+	We'll, after some trying to get things working in Haskell I must admit that I've given up.
+	The issue was that the JSON I have is huge and has a lot of restricted keywords so I'd have to do a lot more
+	work with getting the parser to work and all that doesn't guarantee that Haskell would be the right choice for this.
+	My next step would be to get this working in a mongodb.
+	Tha concept would be:
+		1. A script is periodically running (every 24h?) which scrapes Konzum for an update to prices.
+		2. A second script imports these file to mongodb
+
+	After that I would have to manually figure out what do I actually want to do with the data.
+	I suppose some cool graphs in d3js would be nice, I've wanted to do something with this for quite a while.
+	I've made some bad choices regarding my server but I suppose this is how hacks happen: when you are lazy.
+	I suppose my lazyness comes from inexperience. If I was to do things securely it would take me far too long
+	and I already have a ton of things to figure out. I have to get some security habits ASAP.
+
+	var cd = new Date();
+	var datetime = cd.getDay() + "_" + cd.getMonth() + "_" + cd.getFullYear() + "-" + cd.getHours() + "_" + cd.getMinutes() + "_" + cd.getSeconds();
+	var request = new XMLHttpRequest();
+	var path="http://online.konzum.hr/v2/categories/60006861/products?filter%5Bshow%5D=all&filter%5Bsubcategory_id%5D=&filter%5Bsort_field%5D=name&filter%5Bsort_type%5D=asc&filter%5Bprice%5D%5Bmin%" +
+					"5D=0&filter%5Bprice%5D%5Bmax%5D=110&filter%5Bsort%5D=nameAsc&per_page=1&page=1&time=1427296297983";
+	request.open("GET", path, true);
+	request.onreadystatechange = function() { fs.writeFileSync('konzum_' + datetime + '.dump', request.response); };
+	request.setRequestHeader('Accept', 'application/json, text/plain');
+
+26.3.2015. 10:50
+UPDATE:
+	So, the script is running.
+	I've set it to be saved in /home/
+	crontab -e opens the crontab file
+	crontab is used to periodically run scripts.
+	0 8,20 * * * nodejs /home/kparse.js
+	runs the script every day at 8am and 8pm
+	I wish I had done this sooner to have more interesting data.
+	I suppose I should back this up aswell.
+	Maybe use crontab to mail this? hehe
+
+	Ok, I've not finished with the script.
+	I will make it get all the items from all the categories 
+	after the categories have been parsed.
+
+29.3.2015. 20:40
+UPDATE:
+	Man, time flies by.
+	Ok, the script is up and running.
+	It runs every day at 7am and each run takes up 20mb.
+	I hope I'll get some useful information by the end of this.
+
+3.5.2015. 00:42
+UPDATE:
+	The script is running regularly still without any issues whatsoever.
+	I have hosted a mysql database on the server now as well which has 
+	all the entries which have been collected by now (300k+ rows).
+
+	I have had some issues with uploading all these entries.
+	I've used nodejs and its nodejs-mysql module which ROCKS!!
+	At first things were slow with the simple connection (5h for 100k rows)
+	but later when editing only 2 lines and adding 99 more connections
+	the whole database upload lasts around 15min.
+	Also, there was an issue with the codepage so after I changed it to utf8
+	to support lćšlžč I had to reupload it again.
+	I've created a primary key (id, datum) which seems useful.
+
+	Before the database I had some issues regarding making a chart. 
+	I've tried bokeh python lib and chartist/chartjs libs for JS
+	but the biggest problem was crunching the huge files.
+	It should be much better now that the database is up and running smoothly.
+
+	Also mongoose app has been a huge help.
+	Basicly, it sets up a localhost server from the folder from which it was ran
+	and then you can make requests to it which reaaaly helped me with getting around
+	the "local file reading disabled" restriction in js. Now that I think of it, I
+	might have needed it only for browser scripts while the local nodejs ran one should
+	have been able to use nodejs fs but oh whell, good to know it exists.

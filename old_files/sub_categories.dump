@@ -1,0 +1,613 @@
+[
+  [
+    {
+      "id": 60006862,
+      "path": "/categories/60006862/k-plus",
+      "name": "K Plus"
+    },
+    {
+      "id": 60006866,
+      "path": "/categories/60006866/olea",
+      "name": "Olea"
+    },
+    {
+      "id": 60006869,
+      "path": "/categories/60006869/dentoral",
+      "name": "Dentoral"
+    },
+    {
+      "id": 60006870,
+      "path": "/categories/60006870/era",
+      "name": "ERA"
+    },
+    {
+      "id": 60006871,
+      "path": "/categories/60006871/koko",
+      "name": "Koko"
+    },
+    {
+      "id": 60006872,
+      "path": "/categories/60006872/natur",
+      "name": "Natur"
+    },
+    {
+      "id": 60006873,
+      "path": "/categories/60006873/man-xtreme",
+      "name": "Man Xtreme"
+    },
+    {
+      "id": 60006874,
+      "path": "/categories/60006874/bebe",
+      "name": "Bebe"
+    },
+    {
+      "id": 60006876,
+      "path": "/categories/60006876/dax",
+      "name": "DAX"
+    },
+    {
+      "id": 60006878,
+      "path": "/categories/60006878/kids",
+      "name": "Kids"
+    }
+  ],
+  [
+    {
+      "id": 60004324,
+      "path": "/categories/60004324/mlijecni-proizvodi-i-jaja",
+      "name": "Mliječni proizvodi i jaja"
+    },
+    {
+      "id": 60004364,
+      "path": "/categories/60004364/pahuljice",
+      "name": "Pahuljice"
+    },
+    {
+      "id": 60004370,
+      "path": "/categories/60004370/namazi",
+      "name": "Namazi"
+    },
+    {
+      "id": 60004389,
+      "path": "/categories/60004389/slatkisi-i-grickalice",
+      "name": "Slatkiši i grickalice"
+    },
+    {
+      "id": 60004430,
+      "path": "/categories/60004430/eko-dijabetski-i-zdrava-hrana",
+      "name": "Eko, dijabetski i zdrava hrana"
+    },
+    {
+      "id": 60004460,
+      "path": "/categories/60004460/ukiseljena-i-konzervirana-hrana",
+      "name": "Ukiseljena i konzervirana hrana"
+    },
+    {
+      "id": 60004496,
+      "path": "/categories/60004496/namirnice-za-pripremu-jela",
+      "name": "Namirnice za pripremu jela"
+    },
+    {
+      "id": 60004574,
+      "path": "/categories/60004574/mesne-preradevine",
+      "name": "Mesne prerađevine"
+    },
+    {
+      "id": 60004613,
+      "path": "/categories/60004613/gastro-program",
+      "name": "Gastro program"
+    },
+    {
+      "id": 60004618,
+      "path": "/categories/60004618/smrznuta-hrana",
+      "name": "Smrznuta hrana"
+    },
+    {
+      "id": 60004656,
+      "path": "/categories/60004656/pekarski-proizvodi",
+      "name": "Pekarski proizvodi"
+    },
+    {
+      "id": 60004684,
+      "path": "/categories/60004684/kolaci",
+      "name": "Kolači"
+    },
+    {
+      "id": 60004694,
+      "path": "/categories/60004694/svjeza-riba",
+      "name": "Svježa riba"
+    },
+    {
+      "id": 60004716,
+      "path": "/categories/60004716/svjeze-meso",
+      "name": "Svježe meso"
+    },
+    {
+      "id": 60004773,
+      "path": "/categories/60004773/svjeze-voce-i-povrce",
+      "name": "Svježe voće i povrće"
+    },
+    {
+      "id": 60004805,
+      "path": "/categories/60004805/sirevi",
+      "name": "Sirevi"
+    },
+    {
+      "id": 60004813,
+      "path": "/categories/60004813/internacionalna-kuhinja",
+      "name": "Internacionalna kuhinja"
+    },
+    {
+      "id": 60006261,
+      "path": "/categories/60006261/svjeza-tjestenina-i-specijaliteti",
+      "name": "Svježa tjestenina i specijaliteti"
+    }
+  ],
+  [
+    {
+      "id": 60005634,
+      "path": "/categories/60005634/alkoholna-pica",
+      "name": "Alkoholna pića"
+    },
+    {
+      "id": 60005662,
+      "path": "/categories/60005662/bezalkoholna-pica",
+      "name": "Bezalkoholna pića"
+    },
+    {
+      "id": 60005688,
+      "path": "/categories/60005688/topli-napitci",
+      "name": "Topli napitci"
+    }
+  ],
+  [
+    {
+      "id": 60004815,
+      "path": "/categories/60004815/sredstva-za-pranje-i-ciscenje",
+      "name": "Sredstva za pranje i čišćenje"
+    },
+    {
+      "id": 60004836,
+      "path": "/categories/60004836/osvjezivaci-prostora",
+      "name": "Osvježivači prostora"
+    },
+    {
+      "id": 60004853,
+      "path": "/categories/60004853/insekticidi",
+      "name": "Insekticidi"
+    },
+    {
+      "id": 60004860,
+      "path": "/categories/60004860/higijenski-i-papirnati-proizvodi",
+      "name": "Higijenski i papirnati proizvodi"
+    },
+    {
+      "id": 60004891,
+      "path": "/categories/60004891/kucanske-potrepstine",
+      "name": "Kućanske potrepštine"
+    },
+    {
+      "id": 60004909,
+      "path": "/categories/60004909/posude-i-oprema-za-dom",
+      "name": "Posuđe i oprema za dom"
+    },
+    {
+      "id": 60005000,
+      "path": "/categories/60005000/uradi-sam",
+      "name": "Uradi sam"
+    },
+    {
+      "id": 60005059,
+      "path": "/categories/60005059/sportska-odjeca-i-oprema",
+      "name": "Sportska odjeća i oprema"
+    },
+    {
+      "id": 60005072,
+      "path": "/categories/60005072/skolski-i-uredski-asortiman",
+      "name": "Školski i uredski asortiman"
+    },
+    {
+      "id": 60005090,
+      "path": "/categories/60005090/party-program",
+      "name": "Party program"
+    },
+    {
+      "id": 60005123,
+      "path": "/categories/60005123/ukrasi-i-prigodni-program",
+      "name": "Ukrasi i prigodni program"
+    },
+    {
+      "id": 60006084,
+      "path": "/categories/60006084/destilirana-voda",
+      "name": "Destilirana voda"
+    },
+    {
+      "id": 60006570,
+      "path": "/categories/60006570/kisobrani",
+      "name": "Kišobrani"
+    }
+  ],
+  [
+    {
+      "id": 60005134,
+      "path": "/categories/60005134/mali-kucanski-aparati-i-pribor",
+      "name": "Mali kućanski aparati i pribor"
+    },
+    {
+      "id": 60005139,
+      "path": "/categories/60005139/snimljeni-mediji",
+      "name": "Snimljeni mediji"
+    },
+    {
+      "id": 60005144,
+      "path": "/categories/60005144/prazni-mediji",
+      "name": "Prazni mediji"
+    },
+    {
+      "id": 60005148,
+      "path": "/categories/60005148/oprema-za-medije",
+      "name": "Oprema za medije"
+    },
+    {
+      "id": 60005159,
+      "path": "/categories/60005159/elektro-pribor",
+      "name": "Elektro pribor"
+    },
+    {
+      "id": 60005163,
+      "path": "/categories/60005163/rasvjeta",
+      "name": "Rasvjeta"
+    },
+    {
+      "id": 60005173,
+      "path": "/categories/60005173/veliki-kucanski-aparati",
+      "name": "Veliki kućanski aparati"
+    },
+    {
+      "id": 60005180,
+      "path": "/categories/60005180/usisavaci-i-vrecice-za-usisavace",
+      "name": "Usisavači i vrećice za usisavače"
+    },
+    {
+      "id": 60005184,
+      "path": "/categories/60005184/aparati-za-osobnu-njegu",
+      "name": "Aparati za osobnu njegu"
+    },
+    {
+      "id": 60005194,
+      "path": "/categories/60005194/vage",
+      "name": "Vage"
+    },
+    {
+      "id": 60005198,
+      "path": "/categories/60005198/grijanje-i-hladenje",
+      "name": "Grijanje i hlađenje"
+    },
+    {
+      "id": 60005203,
+      "path": "/categories/60005203/kucanski-aparati-ostalo",
+      "name": "Kućanski aparati - ostalo"
+    },
+    {
+      "id": 60005204,
+      "path": "/categories/60005204/video-tehnika",
+      "name": "Video tehnika"
+    },
+    {
+      "id": 60005212,
+      "path": "/categories/60005212/audio-tehnika",
+      "name": "Audio tehnika"
+    },
+    {
+      "id": 60005220,
+      "path": "/categories/60005220/foto-i-kamere",
+      "name": "Foto i kamere"
+    },
+    {
+      "id": 60005226,
+      "path": "/categories/60005226/mobiteli",
+      "name": "Mobiteli"
+    },
+    {
+      "id": 60005230,
+      "path": "/categories/60005230/telefoni",
+      "name": "Telefoni"
+    },
+    {
+      "id": 60005235,
+      "path": "/categories/60005235/bijela-tehnika",
+      "name": "Bijela tehnika"
+    },
+    {
+      "id": 60005243,
+      "path": "/categories/60005243/informatika",
+      "name": "Informatika"
+    },
+    {
+      "id": 60005254,
+      "path": "/categories/60005254/tehnika-ostalo",
+      "name": "Tehnika - ostalo"
+    }
+  ],
+  [
+    {
+      "id": 60005473,
+      "path": "/categories/60005473/njega-tijela",
+      "name": "Njega tijela"
+    },
+    {
+      "id": 60005491,
+      "path": "/categories/60005491/njega-zubi",
+      "name": "Njega zubi"
+    },
+    {
+      "id": 60005496,
+      "path": "/categories/60005496/njega-kose",
+      "name": "Njega kose"
+    },
+    {
+      "id": 60005506,
+      "path": "/categories/60005506/njega-lica-za-zene",
+      "name": "Njega lica za žene"
+    },
+    {
+      "id": 60005515,
+      "path": "/categories/60005515/muska-kozmetika",
+      "name": "Muška kozmetika"
+    },
+    {
+      "id": 60005526,
+      "path": "/categories/60005526/dekorativna-kozmetika-i-parfemi",
+      "name": "Dekorativna kozmetika i parfemi"
+    },
+    {
+      "id": 60005535,
+      "path": "/categories/60005535/ljepota-i-njega-ostalo",
+      "name": "Ljepota i njega ostalo"
+    },
+    {
+      "id": 60005540,
+      "path": "/categories/60005540/higijenski-proizvodi",
+      "name": "Higijenski proizvodi"
+    },
+    {
+      "id": 60005545,
+      "path": "/categories/60005545/vate-blazinice-i-stapici-za-usi",
+      "name": "Vate, blazinice i štapići za uši"
+    }
+  ],
+  [
+    {
+      "id": 60005550,
+      "path": "/categories/60005550/djecja-hrana",
+      "name": "Dječja hrana"
+    },
+    {
+      "id": 60005557,
+      "path": "/categories/60005557/djecja-kozmetika-i-higijena",
+      "name": "Dječja kozmetika i higijena"
+    },
+    {
+      "id": 60005564,
+      "path": "/categories/60005564/djecja-galanterija",
+      "name": "Dječja galanterija"
+    },
+    {
+      "id": 60005571,
+      "path": "/categories/60005571/trudnice-i-dojilje",
+      "name": "Trudnice i dojilje"
+    },
+    {
+      "id": 60005574,
+      "path": "/categories/60005574/djecji-svijet-ostalo",
+      "name": "Dječji svijet - ostalo"
+    },
+    {
+      "id": 60005575,
+      "path": "/categories/60005575/knjige-za-djecu",
+      "name": "Knjige za djecu"
+    },
+    {
+      "id": 60005579,
+      "path": "/categories/60005579/odjevni-tekstil-za-bebe",
+      "name": "Odjevni tekstil za bebe"
+    },
+    {
+      "id": 60005622,
+      "path": "/categories/60005622/baby-oprema",
+      "name": "Baby oprema"
+    }
+  ],
+  [
+    {
+      "id": 60005585,
+      "path": "/categories/60005585/prve-igracke",
+      "name": "Prve igračke"
+    },
+    {
+      "id": 60005590,
+      "path": "/categories/60005590/plisane-igracke",
+      "name": "Plišane igračke"
+    },
+    {
+      "id": 60005594,
+      "path": "/categories/60005594/igracke-za-djecake",
+      "name": "Igračke za dječake"
+    },
+    {
+      "id": 60005600,
+      "path": "/categories/60005600/igracke-za-djevojcice",
+      "name": "Igračke za djevojčice"
+    },
+    {
+      "id": 60005606,
+      "path": "/categories/60005606/lopte-i-sportski-artikli",
+      "name": "Lopte i sportski artikli"
+    },
+    {
+      "id": 60005610,
+      "path": "/categories/60005610/drustvene-igre-slagalice-kreativni-setovi",
+      "name": "Društvene igre, slagalice, kreativni setovi"
+    },
+    {
+      "id": 60005616,
+      "path": "/categories/60005616/vozila-za-djecu",
+      "name": "Vozila za djecu"
+    },
+    {
+      "id": 60005621,
+      "path": "/categories/60005621/igracke-ostalo",
+      "name": "Igračke - ostalo"
+    }
+  ],
+  [
+    {
+      "id": 60005629,
+      "path": "/categories/60005629/fiction-and-non-fiction",
+      "name": "Beletristika i publicistika"
+    },
+    {
+      "id": 60005630,
+      "path": "/categories/60005630/enciklopedije-i-knjige-za-mlade",
+      "name": "Enciklopedije i knjige za mlade"
+    },
+    {
+      "id": 60005631,
+      "path": "/categories/60005631/kuharice-i-prirucnici",
+      "name": "Kuharice i priručnici"
+    },
+    {
+      "id": 60005632,
+      "path": "/categories/60005632/knjige-za-odrasle-ostalo",
+      "name": "Knjige za odrasle - ostalo"
+    }
+  ],
+  [
+    {
+      "id": 60005367,
+      "path": "/categories/60005367/vrtlarski-pribor",
+      "name": "Vrtlarski pribor"
+    },
+    {
+      "id": 60005379,
+      "path": "/categories/60005379/rostilj-i-pribor",
+      "name": "Roštilj i pribor"
+    },
+    {
+      "id": 60005382,
+      "path": "/categories/60005382/ugljen",
+      "name": "Ugljen"
+    },
+    {
+      "id": 60005385,
+      "path": "/categories/60005385/cvijece",
+      "name": "Cvijeće"
+    }
+  ],
+  [
+    {
+      "id": 60004849,
+      "path": "/categories/60004849/njega-obuce",
+      "name": "Njega obuće"
+    },
+    {
+      "id": 60005274,
+      "path": "/categories/60005274/tekstil-za-kucanstvo",
+      "name": "Tekstil za kućanstvo"
+    },
+    {
+      "id": 60005279,
+      "path": "/categories/60005279/tekstil-odjevni-muski",
+      "name": "Tekstil odjevni muški"
+    },
+    {
+      "id": 60005288,
+      "path": "/categories/60005288/obuca",
+      "name": "Obuća"
+    },
+    {
+      "id": 60005293,
+      "path": "/categories/60005293/pribor-za-sivanje",
+      "name": "Pribor za šivanje"
+    },
+    {
+      "id": 60005302,
+      "path": "/categories/60005302/tekstil-odjevni-zenski",
+      "name": "Tekstil odjevni ženski"
+    },
+    {
+      "id": 60005311,
+      "path": "/categories/60005311/tekstil-odjevni-djecji",
+      "name": "Tekstil odjevni dječji"
+    },
+    {
+      "id": 60005321,
+      "path": "/categories/60005321/carape-zenske",
+      "name": "Čarape ženske"
+    },
+    {
+      "id": 60005328,
+      "path": "/categories/60005328/carape-muske",
+      "name": "Čarape muške"
+    },
+    {
+      "id": 60005333,
+      "path": "/categories/60005333/carape-djecje",
+      "name": "Čarape dječje"
+    },
+    {
+      "id": 60006575,
+      "path": "/categories/60006575/dioptrijske-naocale",
+      "name": "Dioptrijske naočale"
+    }
+  ],
+  [
+    {
+      "id": 60005259,
+      "path": "/categories/60005259/hrana-za-pse",
+      "name": "Hrana za pse"
+    },
+    {
+      "id": 60005262,
+      "path": "/categories/60005262/hrana-za-macke",
+      "name": "Hrana za mačke"
+    },
+    {
+      "id": 60005265,
+      "path": "/categories/60005265/hrana-za-ostale-kucne-ljubimce",
+      "name": "Hrana za ostale kućne ljubimce"
+    },
+    {
+      "id": 60005269,
+      "path": "/categories/60005269/pribor-za-kucne-ljubimce",
+      "name": "Pribor za kućne ljubimce"
+    }
+  ],
+  [
+    {
+      "id": 60005039,
+      "path": "/categories/60005039/tisak",
+      "name": "Tisak"
+    },
+    {
+      "id": 60005045,
+      "path": "/categories/60005045/posta",
+      "name": "Pošta"
+    },
+    {
+      "id": 60005050,
+      "path": "/categories/60005050/bonovi-i-kartice",
+      "name": "Bonovi i kartice"
+    },
+    {
+      "id": 60005057,
+      "path": "/categories/60005057/upaljaci-i-sibice",
+      "name": "Upaljači i šibice"
+    },
+    {
+      "id": 60005058,
+      "path": "/categories/60005058/kiosk-ostalo",
+      "name": "Kiosk - ostalo"
+    }
+  ]
+]

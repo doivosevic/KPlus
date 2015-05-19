@@ -1,0 +1,94 @@
+
+    {
+      "id": 50008896,
+      "code": "04027851",
+      "name": "7 Days Croissant s kakaom punjenjem 60 g",
+      "description": null,
+      "product_path": "/products/50008896/7-days-croissant-s-kakaom-punjenjem-60-g",
+      "image_path": "/images/products/040/04027851.gif",
+      "thumbnail_image_path": "/images/products/040/04027851s.gif",
+      "product_details_path": "/products/50008896",
+      "categories": [
+        {
+          "id": 60004408,
+          "name": "Kroasani",
+          "category_path": "/categories/60004408/kroasani"
+        },
+        {
+          "id": 60004406,
+          "name": "Kroasani i biskvitni kolači",
+          "category_path": "/categories/60004406/kroasani-i-biskvitni-kolaci"
+        },
+        {
+          "id": 60004389,
+          "name": "Slatkiši i grickalice",
+          "category_path": "/categories/60004389/slatkisi-i-grickalice"
+        },
+        {
+          "id": 60004323,
+          "name": "Hrana",
+          "category_path": "/categories/60004323/hrana"
+        }
+      ],
+      "manufacturer": "CHIPITA SpA",
+      "sales_unit_of_measure": "Ko",
+      "quantity_step": 1,
+      "min_order_quantity": 1,
+      "netto_weight_factor": 0.065,
+      "sliceable": false,
+      "catch_weight": 0,
+      "has_image": true,
+      "requires_deposit_packaging": false,
+      "image_s": "/images/products/040/04027851s.gif",
+      "image_m": "/images/products/040/04027851m.gif",
+      "image_l": "/images/products/040/04027851l.gif",
+      "icons": [],
+      "lifetime": null,
+      "product_uoms": [
+        {
+          "id": 66016182,
+          "name": "KO",
+          "netto_weight": 65,
+          "gross_weight": 70,
+          "smaller_unit": null,
+          "smaller_unit_factor": null,
+          "dimensions": null,
+          "volume": null,
+          "barcode": null
+        },
+        {
+          "id": 66016183,
+          "name": "kt",
+          "netto_weight": 1800,
+          "gross_weight": 1950,
+          "smaller_unit": "KO",
+          "smaller_unit_factor": 30,
+          "dimensions": null,
+          "volume": null,
+          "barcode": null
+        },
+        {
+          "id": 66016184,
+          "name": "pl",
+          "netto_weight": 129600,
+          "gross_weight": 165400,
+          "smaller_unit": "kt",
+          "smaller_unit_factor": 72,
+          "dimensions": null,
+          "volume": null,
+          "barcode": null
+        }
+      ],
+      "barcodes": [
+        "5201360521210"
+      ],
+      "active": true,
+      "price_unit_of_measure": "Ko",
+      "statistical_price": "74,83 Kn / Kg",
+      "price": {
+        "amount": 449,
+        "currency": "Kn",
+        "formatted_price": "4,49 Kn"
+      },
+      "favorite": false
+    }

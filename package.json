@@ -1,0 +1,13 @@
+{
+  "name"         : "shopper",
+  "version"      : "0.0.1",
+  "description"  : "Web shop scraper",
+  "main"         : "server.js",
+  "author"       : "Dito",
+  "dependencies" : {
+    "express"    : "latest",
+    "request"    : "latest",
+    "cheerio"    : "latest",
+    "xhr2"       : "latest"
+  }
+}
