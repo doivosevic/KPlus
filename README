@@ -1,9 +1,9 @@
 
 
 ************************
-*******       ******
-***    shopper   ***
-*******       ******
+*******           ******
+***       kplus      ***
+*******           ******
 ************************
 
 
@@ -157,7 +157,7 @@ UPDATE:
   (in case I'd have to fix it again on the server which I sincerely
   hope I won't have to do (soon ;( )))
 
-  
+
   6","name":"Fackelmann rezač krastavaca/kupusa drveni","description":null
   in
   C:\Users\Dito\Desktop\kplus\dump\2015_04_29-7_0_1_Sve za dom.dump
