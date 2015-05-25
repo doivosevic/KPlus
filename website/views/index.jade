@@ -1,0 +1,51 @@
+extends layout
+
+block head
+    script(type='text/javascript' src='dynatable/vendor/jquery-1.7.2.min.js')
+    link(rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css")
+    script(type='text/javascript' src='https://cdn.datatables.net/1.10.7/js/jquery.dataTables.js')
+    
+block content
+    h1= title
+    p Welcome to #{title}
+
+    table#my-table
+
+    script.
+        $.getJSON( '/users/query', function( data ) {
+            /*$('#my-table').dynatable({
+                dataset: {
+                records: data
+                }
+            });*/
+            var cols = [];
+            for (var col in data[0]) cols.push({"title": col});
+            //console.log(data.length);
+            for (var i = 0; i < data.length; ++i) {
+                var newRow = [];
+                for (var val in data[i]) {
+                    /*
+                    console.log(data[i]);
+                    console.log(val);
+                    console.log(data[i][val]);
+                    */
+                    newRow.push(data[i][val]);
+                    //console.log("");
+                }
+                //console.log(newRow);
+                data[i] = newRow;
+            }
+            //console.log(data);
+            //console.log(cols);
+
+            $('#my-table').dataTable({
+                "data": data,
+                "columns": cols/*[
+                    { "title": "Engine" },
+                    { "title": "Browser" },
+                    { "title": "Platform" },
+                    { "title": "Version", "class": "center" },
+                    { "title": "Grade", "class": "center" }
+                ]*/
+            });   
+        });

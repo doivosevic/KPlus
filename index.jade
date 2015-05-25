@@ -1,0 +1,20 @@
+doctype html
+html
+    head
+        title KPlus test page
+        script(type='text/javascript' src='dynatable/vendor/jquery-1.7.2.min.js')
+        script(type='text/javascript' src='dynatable/jquery.dynatable.js')
+        style(type='text/css' rel='stylesheet' href='dynatable/jquery.dynatable.css')
+    body
+        p Hello
+        table#my-table
+
+        script.
+            $.getJSON( '/users/query', function( data ) {
+                $('#my-table').dynatable({
+                    dataset: {
+                    records: data
+                    }
+                });
+                console.log(data);
+            });
