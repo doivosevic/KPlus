@@ -1,0 +1,4 @@
+
+<connectionStrings>
+	<add name="kplusEntities" connectionString="metadata=res://*/Data.KplusModel.csdl|res://*/Data.KplusModel.ssdl|res://*/Data.KplusModel.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=xxx.xxx;user id=xxx;password=xxx;persistsecurityinfo=True;database=xxx&quot;" providerName="System.Data.EntityClient" />
+</connectionStrings>

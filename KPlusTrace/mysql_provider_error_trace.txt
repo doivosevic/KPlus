@@ -1,0 +1,2825 @@
+See the end of this message for details on invoking 
+just-in-time (JIT) debugging instead of this dialog box.
+
+************** Exception Text **************
+System.InvalidOperationException: The 'Instance' member of the Entity Framework provider type 'MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data, Version=6.8.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' did not return an object that inherits from 'System.Data.Entity.Core.Common.DbProviderServices'. Entity Framework providers must extend from this class and the 'Instance' member must return the Singleton instance of the provider.
+   at Microsoft.Data.Entity.Design.VersioningFacade.DbProviderServicesResolver.CreateProviderInstance(Type providerType)
+   at Microsoft.Data.Entity.Design.VersioningFacade.DbProviderServicesResolver.GetService(Type type, Object key)
+   at Microsoft.Data.Entity.Design.VersioningFacade.DependencyResolver.GetService(Type type, Object key)
+   at System.Data.Entity.Infrastructure.DependencyResolution.DbDependencyResolverExtensions.GetService[T](IDbDependencyResolver resolver, Object key)
+   at Microsoft.Data.Entity.Design.VisualStudio.VsUtils.GetProviderManifestTokenConnected(IDbDependencyResolver resolver, String providerInvariantName, String providerConnectionString)
+   at Microsoft.Data.Entity.Design.VisualStudio.ModelWizard.Gui.WizardPageRuntimeConfig.OnDeactivate()
+   at Microsoft.WizardFramework.WizardPage.Deactivate()
+   at Microsoft.WizardFramework.WizardForm.OnNext()
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+
+
+************** Loaded Assemblies **************
+mscorlib
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.96.0 built by: NETFXREL2STAGE
+    CodeBase: file:///C:/Windows/Microsoft.NET/Framework/v4.0.30319/mscorlib.dll
+----------------------------------------
+Microsoft.VisualStudio.Platform.AppDomainManager
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Platform.AppDomainManager/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Platform.AppDomainManager.dll
+----------------------------------------
+System
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+----------------------------------------
+System.Configuration
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+----------------------------------------
+System.Core
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+----------------------------------------
+System.Xml
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+----------------------------------------
+System.Windows.Forms
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll
+----------------------------------------
+System.Drawing
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.UI.Internal
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.UI.Internal/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.UI.Internal.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.14.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.14.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.14.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Interop
+    Assembly Version: 7.1.40304.0
+    Win32 Version: 7.10.6071
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.Shell.Interop/7.1.40304.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Interop.dll
+----------------------------------------
+Microsoft.VisualStudio.OLE.Interop
+    Assembly Version: 7.1.40304.0
+    Win32 Version: 7.10.6070
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.OLE.Interop/7.1.40304.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.OLE.Interop.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Interop.8.0
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.938 (QFE.050727-9300)
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.Shell.Interop.8.0/8.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Interop.8.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Interop.9.0
+    Assembly Version: 9.0.0.0
+    Win32 Version: 9.0.30729.1 built by: SP
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.Shell.Interop.9.0/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Interop.9.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Immutable.14.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.Immutable.14.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Immutable.14.0.dll
+----------------------------------------
+WindowsBase
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/WindowsBase/v4.0_4.0.0.0__31bf3856ad364e35/WindowsBase.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Immutable.10.0
+    Assembly Version: 10.0.0.0
+    Win32 Version: 10.0.30319.1
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.Immutable.10.0/v4.0_10.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Immutable.11.0
+    Assembly Version: 11.0.0.0
+    Win32 Version: 11.0.50727.1
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.Immutable.11.0/v4.0_11.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Immutable.11.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Utilities
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Utilities/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Utilities.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Interop.10.0
+    Assembly Version: 10.0.0.0
+    Win32 Version: 10.0.30319.1 built by: RTMRel
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.Interop.10.0/10.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Interop.10.0.dll
+----------------------------------------
+PresentationFramework
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/PresentationFramework/v4.0_4.0.0.0__31bf3856ad364e35/PresentationFramework.dll
+----------------------------------------
+PresentationCore
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/PresentationCore/v4.0_4.0.0.0__31bf3856ad364e35/PresentationCore.dll
+----------------------------------------
+System.Xaml
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xaml/v4.0_4.0.0.0__b77a5c561934e089/System.Xaml.dll
+----------------------------------------
+Microsoft.VisualStudio.Threading
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50609.2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Threading/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Threading.dll
+----------------------------------------
+Microsoft.VisualStudio.Validation
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50612.1
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Validation/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Validation.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Immutable.12.0
+    Assembly Version: 12.0.0.0
+    Win32 Version: 12.0.21003.1
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.Immutable.12.0/v4.0_12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Immutable.12.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Telemetry.Package
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Telemetry.Package.DLL
+----------------------------------------
+Microsoft.VisualStudio.Shell.Interop.11.0
+    Assembly Version: 11.0.0.0
+    Win32 Version: 11.0.61030.0 built by: Q11REL
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.Interop.11.0/11.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Interop.11.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Telemetry
+    Assembly Version: 14.1.0.0
+    Win32 Version: 14.1.273.6697
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Telemetry.DLL
+----------------------------------------
+Microsoft.VisualStudio.ImageCatalog
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ImageCatalog/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.ImageCatalog.dll
+----------------------------------------
+Microsoft.VisualStudio.Imaging
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Imaging/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Imaging.dll
+----------------------------------------
+Microsoft.VisualStudio.Platform.WindowManagement
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Platform.WindowManagement/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Platform.WindowManagement.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.ViewManager
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.ViewManager/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.ViewManager.dll
+----------------------------------------
+Microsoft.VisualStudio.TextManager.Interop
+    Assembly Version: 7.1.40304.0
+    Win32 Version: 7.10.6070
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.TextManager.Interop/7.1.40304.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.TextManager.Interop.dll
+----------------------------------------
+EnvDTE
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.932 (QFE.050727-9300)
+    CodeBase: file:///C:/Windows/assembly/GAC/EnvDTE/8.0.0.0__b03f5f7f11d50a3a/EnvDTE.dll
+----------------------------------------
+EnvDTE80
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.932 (QFE.050727-9300)
+    CodeBase: file:///C:/Windows/assembly/GAC/EnvDTE80/8.0.0.0__b03f5f7f11d50a3a/EnvDTE80.dll
+----------------------------------------
+PresentationFramework.Aero2
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/PresentationFramework.Aero2/v4.0_4.0.0.0__31bf3856ad364e35/PresentationFramework.Aero2.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.UI.Internal.resources
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.UI.Internal.resources/v4.0_14.0.0.0_en_b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.UI.Internal.resources.dll
+----------------------------------------
+Microsoft.VisualStudio.Diagnostics.Assert
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Diagnostics.Assert/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Diagnostics.Assert.dll
+----------------------------------------
+Microsoft.VisualStudio.Platform.WindowManagement.resources
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Platform.WindowManagement.resources/v4.0_14.0.0.0_en_b03f5f7f11d50a3a/Microsoft.VisualStudio.Platform.WindowManagement.resources.dll
+----------------------------------------
+Devart.Data.PostgreSql.Vs
+    Assembly Version: 7.4.464.0
+    Win32 Version: 7.4.464.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Devart/dotConnect/PostgreSQL/Devart.Data.PostgreSql.Vs.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.9.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.9.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.9.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Data
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.Data.DLL
+----------------------------------------
+System.Design
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Design/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Design.dll
+----------------------------------------
+Devart.Data
+    Assembly Version: 5.0.1256.0
+    Win32 Version: 5.0.1256.0
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Devart.Data/5.0.1256.0__09af7300eec23701/Devart.Data.dll
+----------------------------------------
+Devart.Data.MySql.Vs
+    Assembly Version: 8.4.464.0
+    Win32 Version: 8.4.464.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Devart/dotConnect/MySQL/Devart.Data.MySql.Vs.dll
+----------------------------------------
+MySql.VisualStudio
+    Assembly Version: 1.2.4.0
+    Win32 Version: 1.2.4.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Oracle/MySQL%20for%20Visual%20Studio/1.2.4/mysql.visualstudio.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.12.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.12.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.12.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Data.Services
+    Assembly Version: 9.0.0.0
+    Win32 Version: 9.0.21022.8 built by: RTM
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Data.Services/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Data.Services.dll
+----------------------------------------
+MySql.Data
+    Assembly Version: 6.8.6.0
+    Win32 Version: 6.8.6.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/MySql.Data/v4.0_6.8.6.0__c5687fc88969c44d/MySql.Data.dll
+----------------------------------------
+System.Data
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/System.Data/v4.0_4.0.0.0__b77a5c561934e089/System.Data.dll
+----------------------------------------
+System.Transactions
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/System.Transactions/v4.0_4.0.0.0__b77a5c561934e089/System.Transactions.dll
+----------------------------------------
+Microsoft.VisualStudio.Package.LanguageService.12.0
+    Assembly Version: 12.0.0.0
+    Win32 Version: 12.0.21003.1 built by: REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Package.LanguageService.12.0/v4.0_12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Package.LanguageService.12.0.dll
+----------------------------------------
+Microsoft.VisualStudio.TextManager.Interop.8.0
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.932 (QFE.050727-9300)
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.TextManager.Interop.8.0/8.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Data.Package
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.Data.Package.DLL
+----------------------------------------
+Microsoft.VisualStudio.Data.Framework
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Data.Framework/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Data.Framework.dll
+----------------------------------------
+Microsoft.VisualStudio.Data.Host
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.Data.Host.DLL
+----------------------------------------
+Microsoft.VisualStudio.Data.Core
+    Assembly Version: 9.0.0.0
+    Win32 Version: 9.0.21022.8 built by: RTM
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Data.Core/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Data.Core.dll
+----------------------------------------
+Microsoft.VisualStudio.Data.Interop
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.Data.Interop.DLL
+----------------------------------------
+Microsoft.VisualStudio.ServerExplorer
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.ServerExplorer.DLL
+----------------------------------------
+Microsoft.VisualStudio.DataDesign.Interfaces
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.DataDesign.Interfaces/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.DataDesign.Interfaces.dll
+----------------------------------------
+Microsoft.VisualStudio.DataDesign.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.DataDesign.Common/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.DataDesign.Common.dll
+----------------------------------------
+System.Runtime.Serialization.Formatters.Soap
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.Serialization.Formatters.Soap/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Runtime.Serialization.Formatters.Soap.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Package
+    Assembly Version: 1.5.0.0
+    Win32 Version: 1.5.30722.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Common/Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Package.dll
+----------------------------------------
+Microsoft.VisualStudio.Azure.CommonAzureTools.Utilities
+    Assembly Version: 1.3.0.0
+    Win32 Version: 1.3.30722.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Common/Microsoft.VisualStudio.Azure.CommonAzureTools.Utilities.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.10930.1602
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Common/Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.1.2
+    Assembly Version: 1.2.0.0
+    Win32 Version: 1.2.20710.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Common/Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.1.2.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.1.3
+    Assembly Version: 1.3.0.0
+    Win32 Version: 1.3.21031.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Common/Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.1.3.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.1.4
+    Assembly Version: 1.4.0.0
+    Win32 Version: 1.4.30416.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Common/Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.1.4.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.1.5
+    Assembly Version: 1.5.0.0
+    Win32 Version: 1.5.30722.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Common/Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.1.5.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.1.1
+    Assembly Version: 1.1.0.0
+    Win32 Version: 1.1.20507.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Common/Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.1.1.dll
+----------------------------------------
+Microsoft.VisualStudio.Web.WindowsAzure.Explorer
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/WEB%20TOOLS/WINDOWSAZURE/Microsoft.VisualStudio.Web.WindowsAzure.Explorer.dll
+----------------------------------------
+Microsoft.VisualStudio.Web.Internal.Contracts
+    Assembly Version: 2.3.0.0
+    Win32 Version: 2.3.60711.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/WEB%20TOOLS/PUBLISH/Microsoft.VisualStudio.Web.Internal.Contracts.dll
+----------------------------------------
+Microsoft.VisualStudio.Web.WindowsAzure.Contracts
+    Assembly Version: 2.3.0.0
+    Win32 Version: 2.3.60711.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/WEB%20TOOLS/WINDOWSAZURE/Microsoft.VisualStudio.Web.WindowsAzure.Contracts.dll
+----------------------------------------
+Microsoft.VisualStudio.ServiceBus.Explorer
+    Assembly Version: 2.7.0.0
+    Win32 Version: 2.0.50608.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.ServiceBus.Explorer.DLL
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.Internal
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.30722.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Common/Microsoft.VisualStudio.WindowsAzure.CommonAzureTools.Contracts.Internal.dll
+----------------------------------------
+System.Security
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Security/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Security.dll
+----------------------------------------
+Microsoft.VisualStudio.Azure.ResourceManager.Package
+    Assembly Version: 2.7.0.0
+    Win32 Version: 2.7.30713.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/dui4zlqy.lo3/Microsoft.VisualStudio.Azure.ResourceManager.Package.dll
+----------------------------------------
+Microsoft.VisualStudio.Azure.ResourceManager.Contracts.1.0
+    Assembly Version: 1.0.0.0
+    Win32 Version: 2.7.30713.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Deployment%20Project/Microsoft.VisualStudio.Azure.ResourceManager.Contracts.1.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Azure.ResourceManager.Common
+    Assembly Version: 2.7.0.0
+    Win32 Version: 2.7.30713.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/dui4zlqy.lo3/Microsoft.VisualStudio.Azure.ResourceManager.Common.DLL
+----------------------------------------
+Microsoft.VisualStudio.Azure.ResourceManager.Deployment
+    Assembly Version: 2.7.0.0
+    Win32 Version: 2.7.30713.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/dui4zlqy.lo3/Microsoft.VisualStudio.Azure.ResourceManager.Deployment.DLL
+----------------------------------------
+Microsoft.WindowsAzure.Storage
+    Assembly Version: 4.2.1.0
+    Win32 Version: 4.2.1.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/dui4zlqy.lo3/Microsoft.WindowsAzure.Storage.DLL
+----------------------------------------
+Microsoft.VisualStudio.Text.Data
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Text.Data/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Text.Data.dll
+----------------------------------------
+Microsoft.VisualStudio.CoreUtility
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.CoreUtility/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.CoreUtility.dll
+----------------------------------------
+Microsoft.VisualStudio.ComponentModelHost
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ComponentModelHost/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.ComponentModelHost.dll
+----------------------------------------
+Microsoft.PythonTools
+    Assembly Version: 2.0.2.2015
+    Win32 Version: 2.2.30718.00
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Python%20Tools%20for%20Visual%20Studio/2.2/Microsoft.PythonTools.dll
+----------------------------------------
+Microsoft.PythonTools.Analysis
+    Assembly Version: 2.0.2.2015
+    Win32 Version: 2.2.30718.00
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.PythonTools.Analysis/v4.0_2.0.2.2015__b03f5f7f11d50a3a/Microsoft.PythonTools.Analysis.dll
+----------------------------------------
+Microsoft.VisualStudio.InteractiveWindow
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.InteractiveWindow.DLL
+----------------------------------------
+Microsoft.VisualStudio.Debugger.Interop.11.0
+    Assembly Version: 11.0.0.0
+    Win32 Version: 11.0.50727.1 built by: RTMREL
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Interop.11.0/11.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Debugger.Engine
+    Assembly Version: 1.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.Debugger.Engine.DLL
+----------------------------------------
+Microsoft.PythonTools.Debugger
+    Assembly Version: 2.0.2.2015
+    Win32 Version: 2.2.30718.00
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.PythonTools.Debugger/v4.0_2.0.2.2015__b03f5f7f11d50a3a/Microsoft.PythonTools.Debugger.dll
+----------------------------------------
+Microsoft.VisualStudio.Debugger.InteropA
+    Assembly Version: 9.0.0.0
+    Win32 Version: 9.0.21022.8 built by: RTM
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.Debugger.InteropA/9.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.InteropA.dll
+----------------------------------------
+Microsoft.VisualStudio.Debugger.Interop.10.0
+    Assembly Version: 10.0.0.0
+    Win32 Version: 10.0.30319.1 built by: RTMRel
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Interop.10.0/10.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Interop.10.0.dll
+----------------------------------------
+Microsoft.PythonTools.VSInterpreters
+    Assembly Version: 2.0.2.2015
+    Win32 Version: 2.2.30718.00
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Python%20Tools%20for%20Visual%20Studio/2.2/Microsoft.PythonTools.VSInterpreters.dll
+----------------------------------------
+Microsoft.VisualStudio.VsInteractiveWindow
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.VsInteractiveWindow.DLL
+----------------------------------------
+Microsoft.VisualStudio.Settings.14.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/Microsoft.VisualStudio.Settings.14.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Settings.14.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Editor.Implementation
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Editor.Implementation/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Editor.Implementation.dll
+----------------------------------------
+System.ComponentModel.Composition
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.Composition/v4.0_4.0.0.0__b77a5c561934e089/System.ComponentModel.Composition.dll
+----------------------------------------
+Microsoft.VisualStudio.Text.Logic
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Text.Logic/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Text.Logic.dll
+----------------------------------------
+Microsoft.VisualStudio.Text.UI.Wpf
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Text.UI.Wpf/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Text.UI.Wpf.dll
+----------------------------------------
+Microsoft.VisualStudio.ComponentModelHost.Implementation
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ComponentModelHost.Implementation/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.ComponentModelHost.Implementation.dll
+----------------------------------------
+Microsoft.VisualStudio.ExtensionManager
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ExtensionManager/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.ExtensionManager.dll
+----------------------------------------
+Microsoft.VisualStudio.ExtensionManager.Implementation
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ExtensionManager.Implementation/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.ExtensionManager.Implementation.dll
+----------------------------------------
+Microsoft.VisualStudio.CommonIDE
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.CommonIDE/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.CommonIDE.dll
+----------------------------------------
+Microsoft.Internal.VisualStudio.UserNotifications
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.Internal.VisualStudio.UserNotifications/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.Internal.VisualStudio.UserNotifications.dll
+----------------------------------------
+Microsoft.CSharp
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.CSharp/v4.0_4.0.0.0__b03f5f7f11d50a3a/Microsoft.CSharp.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.VsHub.Immutable
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Shell.VsHub.Immutable.DLL
+----------------------------------------
+System.Dynamic
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Dynamic/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Dynamic.dll
+----------------------------------------
+Microsoft.VisualStudio.Composition
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50609.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Composition.DLL
+----------------------------------------
+Microsoft.VisualStudio.Composition.Configuration
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50609.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Composition.Configuration.DLL
+----------------------------------------
+Microsoft.VisualStudio.ExtensibilityHosting
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ExtensibilityHosting/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.ExtensibilityHosting.dll
+----------------------------------------
+System.Collections.Immutable
+    Assembly Version: 1.1.36.0
+    Win32 Version: 1.1.36.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Collections.Immutable/v4.0_1.1.36.0__b03f5f7f11d50a3a/System.Collections.Immutable.dll
+----------------------------------------
+System.Runtime
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Runtime/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Runtime.dll
+----------------------------------------
+Anonymously Hosted DynamicMethods Assembly
+    Assembly Version: 0.0.0.0
+    Win32 Version: 4.6.96.0 built by: NETFXREL2STAGE
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/mscorlib/v4.0_4.0.0.0__b77a5c561934e089/mscorlib.dll
+----------------------------------------
+System.Collections
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Collections/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Collections.dll
+----------------------------------------
+System.Threading
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Threading/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Threading.dll
+----------------------------------------
+System.Globalization
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Globalization/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Globalization.dll
+----------------------------------------
+System.Runtime.Extensions
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.Extensions/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Runtime.Extensions.dll
+----------------------------------------
+System.Linq
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Linq/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Linq.dll
+----------------------------------------
+Microsoft.VisualStudio.Platform.VSEditor
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Platform.VSEditor/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Platform.VSEditor.dll
+----------------------------------------
+Microsoft.VisualStudio.Platform.VSEditor.Interop
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Platform.VSEditor.Interop.DLL
+----------------------------------------
+MetadataViewProxies_d39140da-5d14-4b6d-bc17-e355f5221d88
+    Assembly Version: 0.0.0.0
+    Win32 Version: 14.0.50609.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Composition.Configuration.dll
+----------------------------------------
+Microsoft.VisualStudio.Text.Internal
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Text.Internal/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Text.Internal.dll
+----------------------------------------
+Microsoft.VisualStudio.Text.UI
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Text.UI/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Text.UI.dll
+----------------------------------------
+Microsoft.VisualStudio.Diagnostics.Measurement
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Diagnostics.Measurement/14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Diagnostics.Measurement.dll
+----------------------------------------
+Microsoft.VisualStudio.TextManager.Interop.10.0
+    Assembly Version: 10.0.0.0
+    Win32 Version: 10.0.30319.1 built by: RTMRel
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.TextManager.Interop.10.0/10.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+----------------------------------------
+Microsoft.PythonTools.IronPython.Interpreter
+    Assembly Version: 2.0.2.2015
+    Win32 Version: 2.2.30718.00
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Python%20Tools%20for%20Visual%20Studio%20-%20IronPython/2.2/Microsoft.PythonTools.IronPython.Interpreter.dll
+----------------------------------------
+Microsoft.PythonTools.Uwp
+    Assembly Version: 2.0.2.2015
+    Win32 Version: 2.2.30718.00
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Python%20Tools%20for%20Visual%20Studio%20-%20Uwp/2.2/Microsoft.PythonTools.Uwp.dll
+----------------------------------------
+Microsoft.VisualStudio.Language.Intellisense
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Language.Intellisense/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Language.Intellisense.dll
+----------------------------------------
+Microsoft.Build.Utilities.Core
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.Build.Utilities.Core/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.Build.Utilities.Core.dll
+----------------------------------------
+Microsoft.Build.Framework
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.Build.Framework/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.Build.Framework.dll
+----------------------------------------
+Microsoft.Windows.Design.Host
+    Assembly Version: 4.3.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.Windows.Design.Host.DLL
+----------------------------------------
+Microsoft.VisualStudio.Language.NavigateTo.Interfaces
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Language.NavigateTo.Interfaces/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Language.NavigateTo.Interfaces.dll
+----------------------------------------
+Microsoft.MSXML
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.932 (QFE.050727-9300)
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.MSXML/8.0.0.0__b03f5f7f11d50a3a/Microsoft.MSXML.dll
+----------------------------------------
+Microsoft.VisualStudio.Editor
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Editor/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Editor.dll
+----------------------------------------
+System.Xml.Linq
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.Linq/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.Linq.dll
+----------------------------------------
+Accessibility
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Accessibility/v4.0_4.0.0.0__b03f5f7f11d50a3a/Accessibility.dll
+----------------------------------------
+Microsoft.Build
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.Build/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.Build.dll
+----------------------------------------
+Microsoft.VisualStudio.Language.StandardClassification
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Language.StandardClassification/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Language.StandardClassification.dll
+----------------------------------------
+Microsoft.IronPythonTools.Resolver
+    Assembly Version: 2.0.2.2015
+    Win32 Version: 2.2.30718.00
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Python%20Tools%20for%20Visual%20Studio%20-%20IronPython/2.2/Microsoft.IronPythonTools.Resolver.DLL
+----------------------------------------
+Microsoft.PythonTools.VsLogger
+    Assembly Version: 2.0.2.2015
+    Win32 Version: 2.2.30718.00
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/PYTHON%20TOOLS%20FOR%20VISUAL%20STUDIO%20-%20LOGGER/2.2/Microsoft.PythonTools.VsLogger.dll
+----------------------------------------
+Xamarin.TestCloud.Integration
+    Assembly Version: 3.11.0.0
+    Win32 Version: 3.11.450
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.TestCloud.Integration.dll
+----------------------------------------
+Xamarin.VisualStudio.IOS.Migration.Shell
+    Assembly Version: 3.11.0.0
+    Win32 Version: 3.11.450
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.VisualStudio.IOS.Migration.Shell.dll
+----------------------------------------
+Xamarin.VisualStudio.Shell
+    Assembly Version: 3.11.0.0
+    Win32 Version: 3.11.450
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.VisualStudio.Shell.dll
+----------------------------------------
+Xamarin.VisualStudio
+    Assembly Version: 3.11.0.0
+    Win32 Version: 3.11.450
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.VisualStudio.DLL
+----------------------------------------
+Xamarin.Components.Ide
+    Assembly Version: 3.1.0.0
+    Win32 Version: 3.1.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.Components.Ide.DLL
+----------------------------------------
+Clide
+    Assembly Version: 2.3.20.0
+    Win32 Version: 2.3.20
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Clide.DLL
+----------------------------------------
+Xwt
+    Assembly Version: 0.1.0.0
+    Win32 Version: 0.1.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xwt.DLL
+----------------------------------------
+System.Reactive.Core
+    Assembly Version: 2.2.5.0
+    Win32 Version: 2.2.5.40722
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/System.Reactive.Core.DLL
+----------------------------------------
+Mono.Debugging
+    Assembly Version: 0.0.0.0
+    Win32 Version: 0.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Mono.Debugging.DLL
+----------------------------------------
+Xamarin.VisualStudio.Android
+    Assembly Version: 3.11.0.0
+    Win32 Version: 3.11.450
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.VisualStudio.Android.dll
+----------------------------------------
+Xamarin.VisualStudio.IOS
+    Assembly Version: 3.11.0.0
+    Win32 Version: 3.11.450
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.VisualStudio.IOS.dll
+----------------------------------------
+System.Web
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/System.Web/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.10.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.10.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.10.0.dll
+----------------------------------------
+VSLangProj
+    Assembly Version: 7.0.3300.0
+    Win32 Version: 7.00.9466
+    CodeBase: file:///C:/Windows/assembly/GAC/VSLangProj/7.0.3300.0__b03f5f7f11d50a3a/VSLangProj.dll
+----------------------------------------
+WindowsFormsIntegration
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/WindowsFormsIntegration/v4.0_4.0.0.0__31bf3856ad364e35/WindowsFormsIntegration.dll
+----------------------------------------
+Microsoft.VisualStudio.TemplateWizardInterface
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.42
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.TemplateWizardInterface/8.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.TemplateWizardInterface.dll
+----------------------------------------
+Xamarin.VisualStudio.Devices
+    Assembly Version: 3.11.0.0
+    Win32 Version: 3.11.450
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.VisualStudio.Devices.DLL
+----------------------------------------
+Xamarin.AndroidTools
+    Assembly Version: 0.0.0.0
+    Win32 Version: 0.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.AndroidTools.DLL
+----------------------------------------
+Mono.Debugging.Soft
+    Assembly Version: 0.0.0.0
+    Win32 Version: 0.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Mono.Debugging.Soft.DLL
+----------------------------------------
+Mono.AndroidTools
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Mono.AndroidTools.DLL
+----------------------------------------
+Xamarin.AndroidDesigner
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.AndroidDesigner.DLL
+----------------------------------------
+Microsoft.VisualStudio.Debugger.Interop
+    Assembly Version: 8.0.1.0
+    Win32 Version: 8.0.50727.42 (RTM.050727-4200)
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.Debugger.Interop/8.0.1.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Interop.dll
+----------------------------------------
+Xamarin.Designer
+    Assembly Version: 0.0.0.0
+    Win32 Version: 0.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.Designer.DLL
+----------------------------------------
+System.Runtime.Serialization
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.Serialization/v4.0_4.0.0.0__b77a5c561934e089/System.Runtime.Serialization.dll
+----------------------------------------
+Newtonsoft.Json
+    Assembly Version: 4.5.0.0
+    Win32 Version: 4.5.11.15520
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Newtonsoft.Json.DLL
+----------------------------------------
+MonoTouch.Tools
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/MonoTouch.Tools.DLL
+----------------------------------------
+MonoTouch.Design.Client
+    Assembly Version: 0.0.0.0
+    Win32 Version: 0.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/MonoTouch.Design.Client.DLL
+----------------------------------------
+MonoTouch.Design
+    Assembly Version: 0.0.0.0
+    Win32 Version: 0.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/MonoTouch.Design.DLL
+----------------------------------------
+Mono.Debugger.Soft
+    Assembly Version: 0.0.0.0
+    Win32 Version: 0.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Mono.Debugger.Soft.DLL
+----------------------------------------
+Xamarin.VisualStudio.IOS.AssetCatalog
+    Assembly Version: 3.11.0.0
+    Win32 Version: 3.11.450
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.VisualStudio.IOS.AssetCatalog.DLL
+----------------------------------------
+Mtb.Server.Common
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Mtb.Server.Common.DLL
+----------------------------------------
+ICSharpCode.NRefactory
+    Assembly Version: 5.0.0.0
+    Win32 Version: 5.4.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/ICSharpCode.NRefactory.DLL
+----------------------------------------
+Xamarin.VisualStudio.Android.Contracts
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.VisualStudio.Android.Contracts.DLL
+----------------------------------------
+Microsoft.VisualStudio.CommandBars
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.932 (QFE.050727-9300)
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.CommandBars/8.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.CommandBars.dll
+----------------------------------------
+UIAutomationProvider
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/UIAutomationProvider/v4.0_4.0.0.0__31bf3856ad364e35/UIAutomationProvider.dll
+----------------------------------------
+UIAutomationTypes
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/UIAutomationTypes/v4.0_4.0.0.0__31bf3856ad364e35/UIAutomationTypes.dll
+----------------------------------------
+stdole
+    Assembly Version: 7.0.3300.0
+    Win32 Version: 7.00.9466
+    CodeBase: file:///C:/Windows/assembly/GAC/stdole/7.0.3300.0__b03f5f7f11d50a3a/stdole.dll
+----------------------------------------
+Microsoft.VisualStudio.ProjectAggregator
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.932 (QFE.050727-9300)
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.ProjectAggregator/8.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.ProjectAggregator.dll
+----------------------------------------
+Microsoft.VisualStudio.Settings
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/Microsoft.VisualStudio.Settings/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Settings.dll
+----------------------------------------
+System.ComponentModel.DataAnnotations
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.DataAnnotations/v4.0_4.0.0.0__31bf3856ad364e35/System.ComponentModel.DataAnnotations.dll
+----------------------------------------
+Newtonsoft.Json
+    Assembly Version: 6.0.0.0
+    Win32 Version: 6.0.4.17603
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Newtonsoft.Json.DLL
+----------------------------------------
+Microsoft.Data.ConnectionUI
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.Data.ConnectionUI.DLL
+----------------------------------------
+System.Drawing.Design
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Drawing.Design/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.Design.dll
+----------------------------------------
+System.Configuration.Install
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Configuration.Install/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.Install.dll
+----------------------------------------
+MySQL.Utility
+    Assembly Version: 2.4.0.96
+    Win32 Version: 2.4.0.96
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Oracle/MySQL%20for%20Visual%20Studio/1.2.4/MySQL.Utility.DLL
+----------------------------------------
+System.ServiceProcess
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.ServiceProcess/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.ServiceProcess.dll
+----------------------------------------
+Microsoft.VisualStudio.TextTemplating.Interfaces.10.0
+    Assembly Version: 10.0.0.0
+    Win32 Version: 10.0.30319.1
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.TextTemplating.Interfaces.10.0/v4.0_10.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.TextTemplating.Interfaces.10.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Web.Publish.Contracts
+    Assembly Version: 2.3.0.0
+    Win32 Version: 2.3.60711.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/WEB%20TOOLS/PUBLISH/Microsoft.VisualStudio.Web.Publish.Contracts.DLL
+----------------------------------------
+Microsoft.Data.Edm
+    Assembly Version: 5.6.0.0
+    Win32 Version: 5.6.0.61587
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/dui4zlqy.lo3/Microsoft.Data.Edm.DLL
+----------------------------------------
+Microsoft.Data.Services.Client
+    Assembly Version: 5.6.0.0
+    Win32 Version: 5.6.0.61587
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/dui4zlqy.lo3/Microsoft.Data.Services.Client.DLL
+----------------------------------------
+Microsoft.Data.OData
+    Assembly Version: 5.6.0.0
+    Win32 Version: 5.6.0.61587
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/dui4zlqy.lo3/Microsoft.Data.OData.DLL
+----------------------------------------
+System.Numerics
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Numerics/v4.0_4.0.0.0__b77a5c561934e089/System.Numerics.dll
+----------------------------------------
+Microsoft.VisualStudio.ExtensionsExplorer
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ExtensionsExplorer/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.ExtensionsExplorer.dll
+----------------------------------------
+System.ServiceModel
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.ServiceModel/v4.0_4.0.0.0__b77a5c561934e089/System.ServiceModel.dll
+----------------------------------------
+System.Net.Http
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Net.Http/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Net.Http.dll
+----------------------------------------
+System.Reactive.Interfaces
+    Assembly Version: 2.2.5.0
+    Win32 Version: 2.2.5.40722
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/System.Reactive.Interfaces.DLL
+----------------------------------------
+ICSharpCode.NRefactory.CSharp
+    Assembly Version: 5.0.0.0
+    Win32 Version: 5.4.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/ICSharpCode.NRefactory.CSharp.DLL
+----------------------------------------
+System.Web.ApplicationServices
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.ApplicationServices/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.ApplicationServices.dll
+----------------------------------------
+System.DirectoryServices.Protocols
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.DirectoryServices.Protocols/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.DirectoryServices.Protocols.dll
+----------------------------------------
+System.Reactive.Linq
+    Assembly Version: 2.2.5.0
+    Win32 Version: 2.2.5.40722
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/System.Reactive.Linq.DLL
+----------------------------------------
+Microsoft.VisualStudio.ErrorListPkg
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/ErrorList/Microsoft.VisualStudio.ErrorListPkg.dll
+----------------------------------------
+Xwt.WPF
+    Assembly Version: 0.1.0.0
+    Win32 Version: 0.1.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xwt.WPF.DLL
+----------------------------------------
+Xamarin.Insights
+    Assembly Version: 1.9.0.0
+    Win32 Version: 1.9.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.Insights.dll
+----------------------------------------
+GitHub.VisualStudio
+    Assembly Version: 1.0.12.1
+    Win32 Version: 1.0.12.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/31rrnrzn.1u3/GitHub.VisualStudio.dll
+----------------------------------------
+Microsoft.TeamFoundation.Git.Provider
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team%20Explorer/Microsoft.TeamFoundation.Git.Provider.dll
+----------------------------------------
+Microsoft.TeamFoundation.Git.CoreServices
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team%20Explorer/Microsoft.TeamFoundation.Git.CoreServices.DLL
+----------------------------------------
+Microsoft.VisualStudio.TeamFoundation
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team%20Explorer/Microsoft.VisualStudio.TeamFoundation.DLL
+----------------------------------------
+Microsoft.TeamFoundation.Client
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team%20Explorer/Microsoft.TeamFoundation.Client.DLL
+----------------------------------------
+Microsoft.TeamFoundation.Git.Controls
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team%20Explorer/Microsoft.TeamFoundation.Git.Controls.DLL
+----------------------------------------
+Microsoft.TeamFoundation.Controls
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team%20Explorer/Microsoft.TeamFoundation.Controls.DLL
+----------------------------------------
+Microsoft.VisualStudio.Services.Integration
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team%20Explorer/Microsoft.VisualStudio.Services.Integration.DLL
+----------------------------------------
+Microsoft.TeamFoundation.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team%20Explorer/Microsoft.TeamFoundation.Common.DLL
+----------------------------------------
+Microsoft.VisualStudio.Shell.Connected
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.Connected/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Connected.dll
+----------------------------------------
+Microsoft.VisualStudio.Services.WebApi
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/DDX3OOVX.NPY/Microsoft.VisualStudio.Services.WebApi.dll
+----------------------------------------
+Microsoft.VisualStudio.Services.Client
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/DDX3OOVX.NPY/Microsoft.VisualStudio.Services.Client.dll
+----------------------------------------
+Microsoft.VisualStudio.Services.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/DDX3OOVX.NPY/Microsoft.VisualStudio.Services.Common.DLL
+----------------------------------------
+Microsoft.VisualStudio.ProductKeyDialog
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ProductKeyDialog/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.ProductKeyDialog.dll
+----------------------------------------
+LibGit2Sharp
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23011.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team%20Explorer/LibGit2Sharp.DLL
+----------------------------------------
+Microsoft.TeamFoundation.ProjectManagement
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TeamFoundation/Team%20Explorer/Microsoft.TeamFoundation.ProjectManagement.DLL
+----------------------------------------
+PresentationFramework-SystemData
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/PresentationFramework-SystemData/v4.0_4.0.0.0__b77a5c561934e089/PresentationFramework-SystemData.dll
+----------------------------------------
+PresentationFramework-SystemXmlLinq
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/PresentationFramework-SystemXmlLinq/v4.0_4.0.0.0__b77a5c561934e089/PresentationFramework-SystemXmlLinq.dll
+----------------------------------------
+PresentationFramework-SystemXml
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/PresentationFramework-SystemXml/v4.0_4.0.0.0__b77a5c561934e089/PresentationFramework-SystemXml.dll
+----------------------------------------
+Microsoft.VisualStudio.Imaging.resources
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Imaging.resources/v4.0_14.0.0.0_en_b03f5f7f11d50a3a/Microsoft.VisualStudio.Imaging.resources.dll
+----------------------------------------
+Microsoft.VisualStudio.Licensing
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/Microsoft.VisualStudio.Licensing/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Licensing.dll
+----------------------------------------
+Microsoft.VisualStudio.ServiceModel
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.6.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ServiceModel/v4.0_14.0.0.0__31bf3856ad364e35/Microsoft.VisualStudio.ServiceModel.dll
+----------------------------------------
+Devart.EntityDeveloper.Vs
+    Assembly Version: 5.8.662.0
+    Win32 Version: 5.8.662.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Devart/Devart.EntityDeveloper.Vs.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.dll
+----------------------------------------
+EntityDeveloper
+    Assembly Version: 5.8.662.0
+    Win32 Version: 5.8.662.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Devart/EntityDeveloper.EXE
+----------------------------------------
+EntityDeveloper.Common
+    Assembly Version: 5.8.662.0
+    Win32 Version: 5.8.662.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Devart/EntityDeveloper.Common.DLL
+----------------------------------------
+EntityDeveloper.Orm.EntityFramework
+    Assembly Version: 5.8.662.0
+    Win32 Version: 5.8.662.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/NET4/EntityDeveloper.Orm.EntityFramework.dll
+----------------------------------------
+EntityDeveloper.Orm.Common
+    Assembly Version: 5.8.662.0
+    Win32 Version: 5.8.662.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Devart/EntityDeveloper.Orm.Common.DLL
+----------------------------------------
+Devart.Shell.Interfaces
+    Assembly Version: 1.4.20.1
+    Win32 Version: 1.4.20.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.Shell.Interfaces.dll
+----------------------------------------
+Devart.Shell.Utils
+    Assembly Version: 1.4.20.1
+    Win32 Version: 1.4.20.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.Shell.Utils.dll
+----------------------------------------
+Devart.Shell.Vs
+    Assembly Version: 1.4.20.1
+    Win32 Version: 1.4.20.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.Shell.Vs.dll
+----------------------------------------
+Devart.Shell.TextEditor
+    Assembly Version: 1.4.20.1
+    Win32 Version: 1.4.20.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.Shell.TextEditor.dll
+----------------------------------------
+EntityDeveloper.Orm.MsLinq
+    Assembly Version: 5.8.662.0
+    Win32 Version: 5.8.662.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/NET4/EntityDeveloper.Orm.MsLinq.dll
+----------------------------------------
+EntityDeveloper.Orm.Linq.Common
+    Assembly Version: 5.8.662.0
+    Win32 Version: 5.8.662.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/NET4/EntityDeveloper.Orm.Linq.Common.DLL
+----------------------------------------
+EntityDeveloper.Orm.NHibernate
+    Assembly Version: 5.8.662.0
+    Win32 Version: 5.8.662.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/NET4/EntityDeveloper.Orm.NHibernate.dll
+----------------------------------------
+Devart.Shell.CommonRes
+    Assembly Version: 1.4.20.1
+    Win32 Version: 1.4.20.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.Shell.CommonRes.DLL
+----------------------------------------
+Devart.XBars.v9.2
+    Assembly Version: 9.2.11.1
+    Win32 Version: 9.2.11.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.XBars.v9.2.DLL
+----------------------------------------
+Devart.XEditors.v9.2
+    Assembly Version: 9.2.11.1
+    Win32 Version: 9.2.11.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.XEditors.v9.2.DLL
+----------------------------------------
+Devart.XData.v9.2
+    Assembly Version: 9.2.11.1
+    Win32 Version: 9.2.11.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.XData.v9.2.DLL
+----------------------------------------
+Devart.XUtils.v9.2
+    Assembly Version: 9.2.11.1
+    Win32 Version: 9.2.11.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.XUtils.v9.2.DLL
+----------------------------------------
+Devart.Shell.Controls
+    Assembly Version: 1.4.20.1
+    Win32 Version: 1.4.20.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.Shell.Controls.dll
+----------------------------------------
+Devart.Shell.Studio
+    Assembly Version: 1.4.20.1
+    Win32 Version: 1.4.20.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.Shell.Studio.dll
+----------------------------------------
+Microsoft.VisualStudio.ApplicationInsights
+    Assembly Version: 3.3.0.0
+    Win32 Version: 3.3.0.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/0ryb501n.stv/Microsoft.VisualStudio.ApplicationInsights.dll
+----------------------------------------
+Microsoft.VisualStudio.ApplicationInsights.Interfaces
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PublicAssemblies/Microsoft.VisualStudio.ApplicationInsights.Interfaces.DLL
+----------------------------------------
+Microsoft.ApplicationInsights
+    Assembly Version: 0.17.0.7329
+    Win32 Version: 0.17.0.7329
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.ApplicationInsights.DLL
+----------------------------------------
+Microsoft.VisualStudio.Azure.ResourceManager.DeployToolbarPackage
+    Assembly Version: 2.7.0.0
+    Win32 Version: 2.7.30713.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/dui4zlqy.lo3/Microsoft.VisualStudio.Azure.ResourceManager.DeployToolbarPackage.dll
+----------------------------------------
+Microsoft.VisualStudio.Web.PasteJson
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/PasteJsonAsClasses/Microsoft.VisualStudio.Web.PasteJson.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.WebPublish
+    Assembly Version: 2.7.0.0
+    Win32 Version: 2.7.30728.1602
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Microsoft.VisualStudio.WindowsAzure.WebPublish.dll
+----------------------------------------
+Mono.Cecil
+    Assembly Version: 0.9.5.0
+    Win32 Version: 0.9.5.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Mono.Cecil.DLL
+----------------------------------------
+Xamarin.VisualStudio.Presentation
+    Assembly Version: 3.11.0.0
+    Win32 Version: 3.11.450
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Xamarin/Xamarin/3.11.450.0/Xamarin.VisualStudio.Presentation.DLL
+----------------------------------------
+System.IdentityModel
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.IdentityModel/v4.0_4.0.0.0__b77a5c561934e089/System.IdentityModel.dll
+----------------------------------------
+System.EnterpriseServices
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/System.EnterpriseServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+----------------------------------------
+System.ServiceModel.Internals
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.ServiceModel.Internals/v4.0_4.0.0.0__31bf3856ad364e35/System.ServiceModel.Internals.dll
+----------------------------------------
+System.Messaging
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Messaging/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Messaging.dll
+----------------------------------------
+System.Runtime.DurableInstancing
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.DurableInstancing/v4.0_4.0.0.0__31bf3856ad364e35/System.Runtime.DurableInstancing.dll
+----------------------------------------
+GitHub.Exports
+    Assembly Version: 1.0.12.1
+    Win32 Version: 1.0.12.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/31rrnrzn.1u3/GitHub.Exports.DLL
+----------------------------------------
+Octokit
+    Assembly Version: 0.9.0.0
+    Win32 Version: 0.9.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/31rrnrzn.1u3/Octokit.DLL
+----------------------------------------
+GitHub.UI.Reactive
+    Assembly Version: 1.0.12.1
+    Win32 Version: 1.0.12.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/31rrnrzn.1u3/GitHub.UI.Reactive.DLL
+----------------------------------------
+ReactiveUI
+    Assembly Version: 6.3.1.0
+    Win32 Version: 6.3.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/31rrnrzn.1u3/ReactiveUI.DLL
+----------------------------------------
+GitHub.Exports.Reactive
+    Assembly Version: 1.0.12.1
+    Win32 Version: 1.0.12.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/31rrnrzn.1u3/GitHub.Exports.Reactive.DLL
+----------------------------------------
+Splat
+    Assembly Version: 1.6.2.0
+    Win32 Version: 1.6.2
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/31rrnrzn.1u3/Splat.DLL
+----------------------------------------
+System.Web.Services
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.Services/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Web.Services.dll
+----------------------------------------
+System.Net.Http.Formatting
+    Assembly Version: 5.2.2.0
+    Win32 Version: 5.2.20826.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/DDX3OOVX.NPY/System.Net.Http.Formatting.DLL
+----------------------------------------
+Microsoft.IdentityModel.Clients.ActiveDirectory
+    Assembly Version: 2.16.0.0
+    Win32 Version: 2.16.20422.1202
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.IdentityModel.Clients.ActiveDirectory.DLL
+----------------------------------------
+VsWebSite.Interop
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.932 (QFE.050727-9300)
+    CodeBase: file:///C:/Windows/assembly/GAC/VsWebSite.Interop/8.0.0.0__b03f5f7f11d50a3a/VsWebSite.Interop.dll
+----------------------------------------
+Devart.Diagram
+    Assembly Version: 1.20.0.95
+    Win32 Version: 1.20.0.95
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.Diagram.dll
+----------------------------------------
+Devart.Shell.TextEditor.Interfaces
+    Assembly Version: 1.4.20.1
+    Win32 Version: 1.4.20.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.Shell.TextEditor.Interfaces.dll
+----------------------------------------
+Devart.Ole.UndoManager
+    Assembly Version: 1.0.295.0
+    Win32 Version: 1.0.295.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.Ole.UndoManager.dll
+----------------------------------------
+Devart.XTreeList.v9.2
+    Assembly Version: 9.2.11.1
+    Win32 Version: 9.2.11.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.XTreeList.v9.2.dll
+----------------------------------------
+Devart.XGrid.v9.2
+    Assembly Version: 9.2.11.1
+    Win32 Version: 9.2.11.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Common%20Files/Devart/EntityDeveloper/Devart.XGrid.v9.2.DLL
+----------------------------------------
+NuGet.PackageManagement
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.PackageManagement.DLL
+----------------------------------------
+NuGet.PackageManagement.VisualStudio
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.PackageManagement.VisualStudio.DLL
+----------------------------------------
+NuGet.ProjectManagement
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.ProjectManagement.DLL
+----------------------------------------
+NuGet.Protocol.Core.Types
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Protocol.Core.Types.DLL
+----------------------------------------
+NuGet.Configuration
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Configuration.DLL
+----------------------------------------
+NuGet.Protocol.VisualStudio
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Protocol.VisualStudio.dll
+----------------------------------------
+NuGet.Protocol.Core.v3
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Protocol.Core.v3.DLL
+----------------------------------------
+NuGet.Protocol.Core.v2
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Protocol.Core.v2.DLL
+----------------------------------------
+System.Net.Http.WebRequest
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Net.Http.WebRequest/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Net.Http.WebRequest.dll
+----------------------------------------
+NuGet.Versioning
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Versioning.DLL
+----------------------------------------
+NuGet.Packaging.Core.Types
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Packaging.Core.Types.DLL
+----------------------------------------
+NuGet.VisualStudio.Implementation
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.VisualStudio.Implementation.dll
+----------------------------------------
+NuGet.VisualStudio
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.VisualStudio.DLL
+----------------------------------------
+NuGet.Core
+    Assembly Version: 2.8.60717.93
+    Win32 Version: 2.8.60717.93
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Core.DLL
+----------------------------------------
+System.Runtime.Remoting
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.Remoting/v4.0_4.0.0.0__b77a5c561934e089/System.Runtime.Remoting.dll
+----------------------------------------
+T4Awesome
+    Assembly Version: 0.2015.7.123
+    Win32 Version: 0.2015.07.123
+    CodeBase: file:///C:/Users/Dito/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/vehogfuj.rnj/T4Awesome.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.11.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.11.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.11.0.dll
+----------------------------------------
+T4Awesome.Interfaces
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.0
+    CodeBase: file:///C:/Users/Dito/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/vehogfuj.rnj/T4Awesome.Interfaces.DLL
+----------------------------------------
+CestnoSoftware.FunctionResult
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.0
+    CodeBase: file:///C:/Users/Dito/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/vehogfuj.rnj/CestnoSoftware.FunctionResult.DLL
+----------------------------------------
+ActiproSoftware.Text.Wpf
+    Assembly Version: 14.2.611.0
+    Win32 Version: 14.2.611.0
+    CodeBase: file:///C:/Users/Dito/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/vehogfuj.rnj/ActiproSoftware.Text.Wpf.DLL
+----------------------------------------
+ActiproSoftware.Text.Addons.DotNet.Wpf
+    Assembly Version: 14.2.611.0
+    Win32 Version: 14.2.611.0
+    CodeBase: file:///C:/Users/Dito/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/vehogfuj.rnj/ActiproSoftware.Text.Addons.DotNet.Wpf.DLL
+----------------------------------------
+ActiproSoftware.Shared.Wpf
+    Assembly Version: 14.2.611.0
+    Win32 Version: 14.2.611.0
+    CodeBase: file:///C:/Users/Dito/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/vehogfuj.rnj/ActiproSoftware.Shared.Wpf.DLL
+----------------------------------------
+ActiproSoftware.Themes.Metro.Wpf
+    Assembly Version: 14.2.611.0
+    Win32 Version: 14.2.611.0
+    CodeBase: file:///C:/Users/Dito/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/vehogfuj.rnj/ActiproSoftware.Themes.Metro.Wpf.DLL
+----------------------------------------
+System.Resources.ResourceManager
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Resources.ResourceManager/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Resources.ResourceManager.dll
+----------------------------------------
+SMDiagnostics
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/SMDiagnostics/v4.0_4.0.0.0__b77a5c561934e089/SMDiagnostics.dll
+----------------------------------------
+MetadataViewProxies_5d8cbc1b-6371-4d1f-bc0c-e890b81c9737
+    Assembly Version: 0.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.ComponentModel.Composition/v4.0_4.0.0.0__b77a5c561934e089/System.ComponentModel.Composition.dll
+----------------------------------------
+System.Threading.Tasks.Dataflow
+    Assembly Version: 4.5.24.0
+    Win32 Version: 4.5.24.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Threading.Tasks.Dataflow/v4.0_4.5.24.0__b03f5f7f11d50a3a/System.Threading.Tasks.Dataflow.dll
+----------------------------------------
+System.Threading.Tasks
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Threading.Tasks/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Threading.Tasks.dll
+----------------------------------------
+CustomMarshalers
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/CustomMarshalers/v4.0_4.0.0.0__b03f5f7f11d50a3a/CustomMarshalers.dll
+----------------------------------------
+Microsoft.VisualStudio.LanguageServices.CSharp
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.LanguageServices.CSharp.DLL
+----------------------------------------
+Microsoft.VisualStudio.LanguageServices
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.LanguageServices.DLL
+----------------------------------------
+Microsoft.CodeAnalysis.Workspaces
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.Workspaces.DLL
+----------------------------------------
+Microsoft.CodeAnalysis.EditorFeatures
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.EditorFeatures.DLL
+----------------------------------------
+Microsoft.CodeAnalysis
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.DLL
+----------------------------------------
+System.Reflection
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Reflection/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Reflection.dll
+----------------------------------------
+System.Text.Encoding
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Text.Encoding/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Text.Encoding.dll
+----------------------------------------
+System.IO
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.IO/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.IO.dll
+----------------------------------------
+System.Xml.XDocument
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.XDocument/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Xml.XDocument.dll
+----------------------------------------
+Microsoft.VisualStudio.LanguageServices.Implementation
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.LanguageServices.Implementation.DLL
+----------------------------------------
+Microsoft.CodeAnalysis.Workspaces.Desktop
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.Workspaces.Desktop.DLL
+----------------------------------------
+Microsoft.CodeAnalysis.Features
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.Features.DLL
+----------------------------------------
+Microsoft.VisualStudio.LanguageServices.Telemetry
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.LanguageServices.Telemetry.DLL
+----------------------------------------
+System.Collections.Concurrent
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Collections.Concurrent/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Collections.Concurrent.dll
+----------------------------------------
+Microsoft.CodeAnalysis.CSharp
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.CSharp.DLL
+----------------------------------------
+Microsoft.CodeAnalysis.CSharp.EditorFeatures
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.CSharp.EditorFeatures.DLL
+----------------------------------------
+System.Reflection.Metadata
+    Assembly Version: 1.0.21.0
+    Win32 Version: 1.0.21.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/System.Reflection.Metadata.DLL
+----------------------------------------
+Microsoft.CodeAnalysis.CSharp.Workspaces
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.CSharp.Workspaces.DLL
+----------------------------------------
+System.Runtime.Handles
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.Handles/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Runtime.Handles.dll
+----------------------------------------
+System.Reflection.Extensions
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Reflection.Extensions/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Reflection.Extensions.dll
+----------------------------------------
+System.Runtime.InteropServices
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Runtime.InteropServices/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Runtime.InteropServices.dll
+----------------------------------------
+System.Text.Encoding.Extensions
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Text.Encoding.Extensions/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Text.Encoding.Extensions.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.TreeNavigation.HierarchyProvider
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.TreeNavigation.HierarchyProvider/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.TreeNavigation.HierarchyProvider.dll
+----------------------------------------
+Microsoft.VisualStudio.ConnectedServices.Package2
+    Assembly Version: 2.0.0.0
+    Win32 Version: 2.0.50624.6
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/qtgwxpng.fro/Microsoft.VisualStudio.ConnectedServices.Package2.dll
+----------------------------------------
+Microsoft.VSDesigner.BootstrapPackage
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/COMMONEXTENSIONS/DATADESIGN/Microsoft.VSDesigner.BootstrapPackage.dll
+----------------------------------------
+Microsoft.Data.Entity.Design.BootstrapPackage
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.Data.Entity.Design.BootstrapPackage.DLL
+----------------------------------------
+Microsoft.VisualStudio.Shell.TreeNavigation.GraphProvider
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.TreeNavigation.GraphProvider/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.TreeNavigation.GraphProvider.dll
+----------------------------------------
+Microsoft.VisualStudio.Progression.Interfaces
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Progression.Interfaces/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Progression.Interfaces.dll
+----------------------------------------
+Microsoft.VisualStudio.GraphModel
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.GraphModel/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.GraphModel.dll
+----------------------------------------
+Microsoft.VisualStudio.GraphProviderPackage
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.GraphProviderPackage/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.GraphProviderPackage.dll
+----------------------------------------
+Microsoft.VisualStudio.Progression.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Progression.Common/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Progression.Common.dll
+----------------------------------------
+Microsoft.VisualStudio.Progression.CodeSchema
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Progression.CodeSchema/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Progression.CodeSchema.dll
+----------------------------------------
+Microsoft.VisualStudio.Progression.DataManager
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Progression.DataManager/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Progression.DataManager.dll
+----------------------------------------
+Microsoft.VisualStudio.Diagnostics.PerformanceProvider
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Diagnostics.PerformanceProvider/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Diagnostics.PerformanceProvider.dll
+----------------------------------------
+Microsoft.VisualStudio.LanguageServices.SolutionExplorer
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.LanguageServices.SolutionExplorer.DLL
+----------------------------------------
+Microsoft.VisualStudio.ConnectedServices
+    Assembly Version: 2.0.0.0
+    Win32 Version: 2.0.50624.6
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/qtgwxpng.fro/Microsoft.VisualStudio.ConnectedServices.DLL
+----------------------------------------
+System.Xml.ReaderWriter
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Xml.ReaderWriter/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Xml.ReaderWriter.dll
+----------------------------------------
+Microsoft.CodeAnalysis.EditorFeatures.Text
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.EditorFeatures.Text.DLL
+----------------------------------------
+Microsoft.VisualStudio.TextTemplating.VSHost.14.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.TextTemplating.VSHost.14.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.TextTemplating.VSHost.14.0.dll
+----------------------------------------
+Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
+    Assembly Version: 11.0.0.0
+    Win32 Version: 11.0.50727.1
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.TextTemplating.Interfaces.11.0/v4.0_11.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.TextTemplating.Interfaces.11.0.dll
+----------------------------------------
+Microsoft.VisualStudio.TextTemplating.14.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.TextTemplating.14.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.TextTemplating.14.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Web.ProjectSystem
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/DNX/Microsoft.VisualStudio.Web.ProjectSystem.dll
+----------------------------------------
+Microsoft.VisualStudio.ProjectSystem.DNX.14.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/DNX/Microsoft.VisualStudio.ProjectSystem.DNX.14.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Designer.Interfaces
+    Assembly Version: 1.0.5000.0
+    Win32 Version: 1.1.4322.573
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.Designer.Interfaces/1.0.5000.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Designer.Interfaces.dll
+----------------------------------------
+System.Dynamic.Runtime
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Dynamic.Runtime/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Dynamic.Runtime.dll
+----------------------------------------
+Microsoft.VisualStudio.Web.Extensions.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/WEB%20TOOLS/SHARED/Microsoft.VisualStudio.Web.Extensions.Common.dll
+----------------------------------------
+Microsoft.VisualStudio.XmlEditor
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.XmlEditor/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.XmlEditor.dll
+----------------------------------------
+Microsoft.XmlEditor
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.XmlEditor/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.XmlEditor.dll
+----------------------------------------
+Microsoft.VisualStudio.Package.LanguageService.14.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.6.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Package.LanguageService.14.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Package.LanguageService.14.0.dll
+----------------------------------------
+Microsoft.IntelliTrace.DebuggerMargin.14.0.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.00
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/IntelliTrace/14.0.0/Microsoft.IntelliTrace.DebuggerMargin.14.0.0.dll
+----------------------------------------
+Microsoft.IntelliTrace.Authoring.14.0.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.00
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.IntelliTrace.Authoring.14.0.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.IntelliTrace.Authoring.14.0.0.dll
+----------------------------------------
+Microsoft.Web.Editor
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/Editors/Microsoft.Web.Editor.dll
+----------------------------------------
+Microsoft.VisualStudio.Debugger.Parallel.Extension
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Parallel.Extension/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Parallel.Extension.dll
+----------------------------------------
+Microsoft.VisualStudio.CodeSense.CollaborationProvider
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/CodeSense/Providers/CollaborationProvider/Microsoft.VisualStudio.CodeSense.CollaborationProvider.dll
+----------------------------------------
+Microsoft.VisualStudio.Diagnostics.Utilities
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.00
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Diagnostics.Utilities.DLL
+----------------------------------------
+Microsoft.VisualStudio.CodeSense.FileIndicator.Provider
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/CodeSense/Providers/FileIndicatorProvider/Microsoft.VisualStudio.CodeSense.FileIndicator.Provider.dll
+----------------------------------------
+Microsoft.VisualStudio.Debugger.Interop.Internal
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Interop.Internal/14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Interop.Internal.dll
+----------------------------------------
+Microsoft.CodeAnalysis.CSharp.Features
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.CSharp.Features.DLL
+----------------------------------------
+PowerShellTools.14.0
+    Assembly Version: 3.0.177.0
+    Win32 Version: 3.0.177
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/tld0vcxe.tbn/PowerShellTools.14.0.dll
+----------------------------------------
+System.Reflection.Primitives
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Reflection.Primitives/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Reflection.Primitives.dll
+----------------------------------------
+T4Toolbox.VisualStudio
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.0.0
+    CodeBase: file:///C:/Users/Dito/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/yxohkb0d.anf/T4Toolbox.VisualStudio.dll
+----------------------------------------
+T4Toolbox
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.0.0
+    CodeBase: file:///C:/Users/Dito/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/yxohkb0d.anf/T4Toolbox.dll
+----------------------------------------
+Microsoft.JSON.Core
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/Editors/Microsoft.JSON.Core.dll
+----------------------------------------
+Microsoft.CSS.Core
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/Editors/Microsoft.CSS.Core.dll
+----------------------------------------
+Microsoft.VisualStudio
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.6.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.dll
+----------------------------------------
+Microsoft.VisualStudio.Toolbox
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Toolbox/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Toolbox.dll
+----------------------------------------
+Microsoft.VisualStudio.IDE.ToolboxControlsInstaller
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.IDE.ToolboxControlsInstaller.DLL
+----------------------------------------
+Microsoft.VisualStudio.Toolbox.resources
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Toolbox.resources/v4.0_14.0.0.0_en_b03f5f7f11d50a3a/Microsoft.VisualStudio.Toolbox.resources.dll
+----------------------------------------
+System.Windows.Forms.VisualStudio.11.0
+    Assembly Version: 4.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms.VisualStudio.11.0/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.VisualStudio.11.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Design
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Design/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Design.dll
+----------------------------------------
+Microsoft.VisualStudio.VSHelp
+    Assembly Version: 7.0.3300.0
+    Win32 Version: 7.00.9466
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.VSHelp/7.0.3300.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.VSHelp.dll
+----------------------------------------
+Microsoft.VisualStudio.VSHelp80
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.932 (QFE.050727-9300)
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.VSHelp80/8.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.VSHelp80.dll
+----------------------------------------
+Microsoft.WindowsAzure.HDIStudio.HDIAzureNode.14.0
+    Assembly Version: 2.0.2200.0
+    Win32 Version: 2.0.2200.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/HDINSIGHT%20TOOLS%20FOR%20VS%202015/2.0.2200.0/Microsoft.WindowsAzure.HDIStudio.HDIAzureNode.14.0.dll
+----------------------------------------
+Microsoft.Cosmos.ClientTools.MetaDataToolsCommon.14.0
+    Assembly Version: 2.0.2200.0
+    Win32 Version: 2.0.2200.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/HDINSIGHT%20TOOLS%20FOR%20VS%202015/2.0.2200.0/Microsoft.Cosmos.ClientTools.MetaDataToolsCommon.14.0.DLL
+----------------------------------------
+Microsoft.WindowsAzure.HDIStudio.UI.14.0
+    Assembly Version: 2.0.2200.0
+    Win32 Version: 2.0.2200.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/HDINSIGHT%20TOOLS%20FOR%20VS%202015/2.0.2200.0/Microsoft.WindowsAzure.HDIStudio.UI.14.0.DLL
+----------------------------------------
+Microsoft.WindowsAzure.HDIStudio.Business.HDInsight
+    Assembly Version: 2.0.2200.0
+    Win32 Version: 2.0.2200.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/HDINSIGHT%20TOOLS%20FOR%20VS%202015/2.0.2200.0/Microsoft.WindowsAzure.HDIStudio.Business.HDInsight.DLL
+----------------------------------------
+Microsoft.Cosmos.ClientTools.MetaDataToolsCommon.14.0.resources
+    Assembly Version: 2.0.2200.0
+    Win32 Version: 2.0.2200.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/HDINSIGHT%20TOOLS%20FOR%20VS%202015/2.0.2200.0/en-US/Microsoft.Cosmos.ClientTools.MetaDataToolsCommon.14.0.resources.DLL
+----------------------------------------
+Microsoft.WindowsAzure.HDIStudio.Business.Common
+    Assembly Version: 2.0.2200.0
+    Win32 Version: 2.0.2200.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/HDINSIGHT%20TOOLS%20FOR%20VS%202015/2.0.2200.0/Microsoft.WindowsAzure.HDIStudio.Business.Common.DLL
+----------------------------------------
+Microsoft.Cosmos.ClientTools.Common
+    Assembly Version: 2.0.2200.0
+    Win32 Version: 2.0.2200.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/HDINSIGHT%20TOOLS%20FOR%20VS%202015/2.0.2200.0/Microsoft.Cosmos.ClientTools.Common.DLL
+----------------------------------------
+Microsoft.WindowsAzure.HDIStudio.HDIAzureNode.14.0.resources
+    Assembly Version: 2.0.2200.0
+    Win32 Version: 2.0.2200.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/HDINSIGHT%20TOOLS%20FOR%20VS%202015/2.0.2200.0/en-US/Microsoft.WindowsAzure.HDIStudio.HDIAzureNode.14.0.resources.DLL
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.Explorer
+    Assembly Version: 2.7.0.0
+    Win32 Version: 2.7.30728.1602
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Microsoft.VisualStudio.WindowsAzure.Explorer.dll
+----------------------------------------
+Microsoft.VisualStudio.Azure.AzureTools.Utilities.1.3
+    Assembly Version: 1.3.0.0
+    Win32 Version: 1.3.30722.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/v2.7/Microsoft.VisualStudio.Azure.AzureTools.Utilities.1.3.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.Services
+    Assembly Version: 1.1.0.0
+    Win32 Version: 2.7.30728.1602
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Microsoft.VisualStudio.WindowsAzure.Services.dll
+----------------------------------------
+Microsoft.VsHub.Client
+    Assembly Version: 1.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VsHub.Client.DLL
+----------------------------------------
+Microsoft.VsHub.Utility
+    Assembly Version: 1.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VsHub.Utility.DLL
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.Package
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLDB/Microsoft.VisualStudio.Data.Tools.Package.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.Services.Package
+    Assembly Version: 1.4.0.0
+    Win32 Version: 1.4.30611.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Services/Microsoft.VisualStudio.WindowsAzure.Services.Package.dll
+----------------------------------------
+Microsoft.VisualStudio.Azure.Services.Utilities
+    Assembly Version: 1.3.0.0
+    Win32 Version: 1.3.30604.1604
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Services/Microsoft.VisualStudio.Azure.Services.Utilities.dll
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.Services.Common
+    Assembly Version: 1.4.0.0
+    Win32 Version: 1.4.30611.1601
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Services/Microsoft.VisualStudio.WindowsAzure.Services.Common.dll
+----------------------------------------
+Microsoft.Data.Tools.Schema.Sql
+    Assembly Version: 12.0.0.0
+    Win32 Version: 12.0.3021.1
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLDB/DAC/120/Microsoft.Data.Tools.Schema.Sql.dll
+----------------------------------------
+System.Diagnostics.Tracing
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Diagnostics.Tracing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Diagnostics.Tracing.dll
+----------------------------------------
+Microsoft.AspNet.SignalR.Client
+    Assembly Version: 2.1.2.0
+    Win32 Version: 2.1.30912.170
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.AspNet.SignalR.Client.DLL
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.Delta.UI
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Data.Tools.Delta.UI/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Data.Tools.Delta.UI.dll
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.Delta
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Data.Tools.Delta/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Data.Tools.Delta.dll
+----------------------------------------
+Microsoft.IntelliTrace.Package.Common.14.0.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.00
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.IntelliTrace.Package.Common.14.0.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.IntelliTrace.Package.Common.14.0.0.dll
+----------------------------------------
+Microsoft.VisualStudio.ProductKeyDialog.resources
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ProductKeyDialog.resources/v4.0_14.0.0.0_en_b03f5f7f11d50a3a/Microsoft.VisualStudio.ProductKeyDialog.resources.dll
+----------------------------------------
+System.Web.Extensions
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Web.Extensions/v4.0_4.0.0.0__31bf3856ad364e35/System.Web.Extensions.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Connected.resources
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.Connected.resources/v4.0_14.0.0.0_en_b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Connected.resources.dll
+----------------------------------------
+System.Threading.Tasks.Parallel
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Threading.Tasks.Parallel/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Threading.Tasks.Parallel.dll
+----------------------------------------
+Microsoft.VisualStudio.VCProjectEngine
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.VisualStudio.VCProjectEngine/14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.VCProjectEngine.dll
+----------------------------------------
+Licensing.Net
+    Assembly Version: 3.0.0.0
+    Win32 Version: 3.1.18.0
+    CodeBase: file:///C:/Users/Dito/AppData/Local/Microsoft/VisualStudio/14.0/Extensions/vehogfuj.rnj/Licensing.Net.DLL
+----------------------------------------
+System.Management
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Management/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Management.dll
+----------------------------------------
+VSLangProj110
+    Assembly Version: 11.0.0.0
+    Win32 Version: 11.0.61030.0 built by: Q11REL
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/VSLangProj110/11.0.0.0__b03f5f7f11d50a3a/VSLangProj110.dll
+----------------------------------------
+Microsoft.VisualStudio.CodeSense.Git.CollaborationProvider
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/CodeSense/Providers/GitProvider/Microsoft.VisualStudio.CodeSense.Git.CollaborationProvider.dll
+----------------------------------------
+Microsoft.VisualStudio.CodeSense.Client.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.CodeSense.Client.Common/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.CodeSense.Client.Common.dll
+----------------------------------------
+Nuget.PackageIndex.VisualStudio
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.18.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/DNX/Nuget.PackageIndex.VisualStudio.dll
+----------------------------------------
+Nuget.PackageIndex
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.18.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/DNX/Nuget.PackageIndex.dll
+----------------------------------------
+VSLangProj140
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/VSLangProj140/14.0.0.0__b03f5f7f11d50a3a/VSLangProj140.dll
+----------------------------------------
+VSLangProj80
+    Assembly Version: 8.0.0.0
+    Win32 Version: 8.0.50727.4453 (QFE.050727-4400)
+    CodeBase: file:///C:/Windows/assembly/GAC/VSLangProj80/8.0.0.0__b03f5f7f11d50a3a/VSLangProj80.dll
+----------------------------------------
+NuGet.Packaging
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Packaging.DLL
+----------------------------------------
+NuGet.Frameworks
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Frameworks.DLL
+----------------------------------------
+Microsoft.VisualStudio.Dialogs
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Dialogs/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Dialogs.dll
+----------------------------------------
+Microsoft.VisualStudio.ExtensionsExplorer.UI
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.ExtensionsExplorer.UI/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.ExtensionsExplorer.UI.dll
+----------------------------------------
+Microsoft.VisualStudio.TemplateProviders.Implementation
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TemplateProviders/Microsoft.VisualStudio.TemplateProviders.Implementation.DLL
+----------------------------------------
+PresentationFramework-SystemCore
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/PresentationFramework-SystemCore/v4.0_4.0.0.0__b77a5c561934e089/PresentationFramework-SystemCore.dll
+----------------------------------------
+Microsoft.Threading.Tasks
+    Assembly Version: 1.0.12.0
+    Win32 Version: 1.0.168.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.Threading.Tasks.DLL
+----------------------------------------
+Microsoft.ApplicationInsights.UniversalTelemetryChannel
+    Assembly Version: 0.17.0.7339
+    Win32 Version: 0.17.0.7339
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.ApplicationInsights.UniversalTelemetryChannel.DLL
+----------------------------------------
+Microsoft.Diagnostics.Tracing.EventSource
+    Assembly Version: 1.1.16.0
+    Win32 Version: 1.1.16.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.Diagnostics.Tracing.EventSource.DLL
+----------------------------------------
+Microsoft.ApplicationInsights.PersistenceChannel
+    Assembly Version: 0.17.0.7338
+    Win32 Version: 0.17.0.7338
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.ApplicationInsights.PersistenceChannel.DLL
+----------------------------------------
+Microsoft.VisualStudio.TemplateWizard
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.TemplateWizard/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.TemplateWizard.dll
+----------------------------------------
+Microsoft.Data.Entity.Design
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.Data.Entity.Design.DLL
+----------------------------------------
+Microsoft.Data.Entity.Design.Extensibility
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PublicAssemblies/Microsoft.Data.Entity.Design.Extensibility.DLL
+----------------------------------------
+Microsoft.WizardFramework
+    Assembly Version: 8.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.WizardFramework.DLL
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.Design.XmlCore
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.Data.Tools.Design.XmlCore.DLL
+----------------------------------------
+Microsoft.Data.Entity.Design.Package
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.Data.Entity.Design.Package.DLL
+----------------------------------------
+Microsoft.VisualStudio.Modeling.Sdk.Shell.14.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Modeling.Sdk.Shell.14.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Modeling.Sdk.Shell.14.0.dll
+----------------------------------------
+Microsoft.VisualStudio.Modeling.Sdk.14.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Modeling.Sdk.14.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Modeling.Sdk.14.0.dll
+----------------------------------------
+Microsoft.Data.Entity.Design.Model
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.Data.Entity.Design.Model.DLL
+----------------------------------------
+Microsoft.Data.Tools.Design.XmlCore
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.Data.Tools.Design.XmlCore.DLL
+----------------------------------------
+Microsoft.Data.Entity.Design.EntityDesigner
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.Data.Entity.Design.EntityDesigner.DLL
+----------------------------------------
+EntityFramework
+    Assembly Version: 6.0.0.0
+    Win32 Version: 6.1.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/EntityFramework.DLL
+----------------------------------------
+Microsoft.VisualStudio.Modeling.Sdk.Diagrams.14.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Modeling.Sdk.Diagrams.14.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Modeling.Sdk.Diagrams.14.0.dll
+----------------------------------------
+Microsoft.VSDesigner
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VSDesigner/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VSDesigner.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Design
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.Design/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Design.dll
+----------------------------------------
+Microsoft.VisualStudio.DataDesign.DataSetDesigner
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.DataDesign.DataSetDesigner/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.DataDesign.DataSetDesigner.dll
+----------------------------------------
+Microsoft.Data.Entity.Design.VersioningFacade
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.Data.Entity.Design.VersioningFacade.DLL
+----------------------------------------
+COM2InteropEmit
+    Assembly Version: 0.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll
+----------------------------------------
+Microsoft.VisualStudio.DataTools.Interop
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.DataTools.Interop.DLL
+----------------------------------------
+EntityFramework.SqlServer
+    Assembly Version: 6.0.0.0
+    Win32 Version: 6.1.40302.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/EntityFramework.SqlServer.DLL
+----------------------------------------
+Microsoft.VisualStudio.DataTools
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.DataTools.DLL
+----------------------------------------
+Microsoft.Data.ConnectionUI.Dialog
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.Data.ConnectionUI.Dialog.DLL
+----------------------------------------
+Microsoft.VisualStudio.Data.Compatibility
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.Data.Compatibility.DLL
+----------------------------------------
+Microsoft.VisualStudio.Editors
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Editors/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Editors.dll
+----------------------------------------
+Microsoft.VisualBasic
+    Assembly Version: 10.0.0.0
+    Win32 Version: 12.0.20806.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualBasic/v4.0_10.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualBasic.dll
+----------------------------------------
+System.Data.OracleClient
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/System.Data.OracleClient/v4.0_4.0.0.0__b77a5c561934e089/System.Data.OracleClient.dll
+----------------------------------------
+System.Data.Entity
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Data.Entity/v4.0_4.0.0.0__b77a5c561934e089/System.Data.Entity.dll
+----------------------------------------
+MySql.Data.Entity.EF5
+    Assembly Version: 6.8.6.0
+    Win32 Version: 6.8.6.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/MySql.Data.Entity.EF5.DLL
+----------------------------------------
+Microsoft.VisualStudio.WindowsAzure.Common.2.7
+    Assembly Version: 2.7.0.0
+    Win32 Version: 2.7.30728.1602
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Windows%20Azure%20Tools/Microsoft.VisualStudio.WindowsAzure.Common.2.7.dll
+----------------------------------------
+Microsoft.Threading.Tasks.Extensions
+    Assembly Version: 1.0.12.0
+    Win32 Version: 1.0.168.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.Threading.Tasks.Extensions.DLL
+----------------------------------------
+NuGet.Tools
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Tools.dll
+----------------------------------------
+NuGet.PackageManagement.UI
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.PackageManagement.UI.DLL
+----------------------------------------
+NuGet.Resolver
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Resolver.DLL
+----------------------------------------
+NuGet.Logging
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Logging.DLL
+----------------------------------------
+NuGet.Console
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Console.DLL
+----------------------------------------
+NuGet.Console.Types
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Console.Types.DLL
+----------------------------------------
+NuGet.Packaging.Core
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Packaging.Core.DLL
+----------------------------------------
+NuGet.Commands
+    Assembly Version: 3.1.1.0
+    Win32 Version: 3.1.1.10724
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/NBOOTUAW.BF0/NuGet.Commands.DLL
+----------------------------------------
+StanCore
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/StanCore/v4.0_14.0.0.0__b03f5f7f11d50a3a/StanCore.dll
+----------------------------------------
+Microsoft.VisualStudio.Diagnostics.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Diagnostics.Common/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Diagnostics.Common.dll
+----------------------------------------
+Microsoft.VisualStudio.DeveloperTools
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.DeveloperTools/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.DeveloperTools.dll
+----------------------------------------
+StanPackage
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/StanPackage.DLL
+----------------------------------------
+Microsoft.VisualStudio.CodeAnalysis.Sdk.UI
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.CodeAnalysis.Sdk.UI.DLL
+----------------------------------------
+Microsoft.VisualStudio.ReferenceManager
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/ReferenceManager/Microsoft.VisualStudio.ReferenceManager.dll
+----------------------------------------
+Microsoft.VisualStudio.ReferenceManager.Contracts
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/ReferenceManager/Microsoft.VisualStudio.ReferenceManager.Contracts.DLL
+----------------------------------------
+Microsoft.VisualStudio.ReferenceManager.Dialog
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/COMMONEXTENSIONS/MICROSOFT/REFERENCEMANAGER/Microsoft.VisualStudio.ReferenceManager.Dialog.dll
+----------------------------------------
+Microsoft.VisualStudio.ReferenceManager.Providers
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/COMMONEXTENSIONS/MICROSOFT/REFERENCEMANAGER/Microsoft.VisualStudio.ReferenceManager.Providers.dll
+----------------------------------------
+Microsoft.VisualStudio.ReferenceManager.Dialog.resources
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/COMMONEXTENSIONS/MICROSOFT/REFERENCEMANAGER/en/Microsoft.VisualStudio.ReferenceManager.Dialog.resources.DLL
+----------------------------------------
+Microsoft.VisualStudio.ReferenceManager.Providers.resources
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/COMMONEXTENSIONS/MICROSOFT/REFERENCEMANAGER/en/Microsoft.VisualStudio.ReferenceManager.Providers.resources.DLL
+----------------------------------------
+System.Diagnostics.Debug
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Diagnostics.Debug/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Diagnostics.Debug.dll
+----------------------------------------
+Microsoft.Build.Tasks.Core
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.Build.Tasks.Core/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.Build.Tasks.Core.dll
+----------------------------------------
+Microsoft.Build.Tasks.CodeAnalysis
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/MSBuild/14.0/bin/Microsoft.Build.Tasks.CodeAnalysis.dll
+----------------------------------------
+Microsoft.VisualStudio.Shell.Interop.12.0
+    Assembly Version: 12.0.0.0
+    Win32 Version: 12.0.30110.0 built by: REL
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Shell.Interop.12.0/12.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Shell.Interop.12.0.dll
+----------------------------------------
+VsGraphicsLaunchHookPkg
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/VsGraphics/VsGraphicsLaunchHookPkg.dll
+----------------------------------------
+Microsoft.IntelliTrace.Package.14.0.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.00
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.IntelliTrace.Package.14.0.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.IntelliTrace.Package.14.0.0.dll
+----------------------------------------
+Microsoft.IntelliTrace.14.0.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.00
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.IntelliTrace.14.0.0/14.0.0.0__b03f5f7f11d50a3a/Microsoft.IntelliTrace.14.0.0.dll
+----------------------------------------
+Microsoft.IntelliTrace.ConfigUI
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/IntelliTrace/14.0.0/Microsoft.IntelliTrace.ConfigUI.dll
+----------------------------------------
+Microsoft.IntelliTrace.Debugger.14.0.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.00
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.IntelliTrace.Debugger.14.0.0/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.IntelliTrace.Debugger.14.0.0.dll
+----------------------------------------
+Microsoft.IntelliTrace.Debugger.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.00
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/COMMONEXTENSIONS/MICROSOFT/INTELLITRACE/14.0.0/Microsoft.IntelliTrace.Debugger.Common.dll
+----------------------------------------
+Microsoft.IntelliTrace.Concord
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.00
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/Packages/Debugger/Microsoft.IntelliTrace.Concord.dll
+----------------------------------------
+Microsoft.IntelliTrace
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.00
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/IntelliTrace/14.0.0/Microsoft.IntelliTrace.dll
+----------------------------------------
+Microsoft.VisualStudio.Enterprise.AspNetHelper
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.AspNetHelper.DLL
+----------------------------------------
+Microsoft.VisualStudio.Debugger.SymbolLocator.Interop
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.SymbolLocator.Interop/14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.SymbolLocator.Interop.dll
+----------------------------------------
+vsdebugeng.manimpl
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/vsdebugeng.manimpl.DLL
+----------------------------------------
+Microsoft.VisualStudio.VIL.Host
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.VIL.Host/14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.VIL.Host.dll
+----------------------------------------
+Microsoft.VisualStudio.VIL
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.VIL/14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.VIL.dll
+----------------------------------------
+Microsoft.VisualStudio.Debugger.Metadata
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Microsoft.VisualStudio.Debugger.Metadata/14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Debugger.Metadata.dll
+----------------------------------------
+System.Dynamic.DynamicAssembly
+    Assembly Version: 0.0.0.0
+    Win32 Version: 4.0.30319.33440
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.Dynamic/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Dynamic.dll
+----------------------------------------
+T4Toolbox.VisualStudio.Editor
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.0.0
+    CodeBase: file:///C:/USERS/DITO/APPDATA/LOCAL/MICROSOFT/VISUALSTUDIO/14.0/EXTENSIONS/YXOHKB0D.ANF/T4Toolbox.VisualStudio.Editor.dll
+----------------------------------------
+Microsoft.VisualStudio.CodeSense.Roslyn
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.CodeSense.Roslyn/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.CodeSense.Roslyn.dll
+----------------------------------------
+Microsoft.Alm.Shared
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.Alm.Shared/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.Alm.Shared.dll
+----------------------------------------
+Microsoft.VisualStudio.CodeSense.TestsProvider
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/CodeSense/Providers/TestsProvider/Microsoft.VisualStudio.CodeSense.TestsProvider.dll
+----------------------------------------
+Microsoft.VisualStudio.TestWindow.Interfaces
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/CommonExtensions/Microsoft/TestWindow/Microsoft.VisualStudio.TestWindow.Interfaces.dll
+----------------------------------------
+Microsoft.Alm.Shared.Remoting.RemoteContainer
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_32/Microsoft.Alm.Shared.Remoting.RemoteContainer/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.Alm.Shared.Remoting.RemoteContainer.dll
+----------------------------------------
+Microsoft.VisualStudio.Alm.Shared.CodeAnalysisClient
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Alm.Shared.CodeAnalysisClient/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Alm.Shared.CodeAnalysisClient.dll
+----------------------------------------
+Microsoft.VisualStudio.Alm.Shared.CodeAnalysisServer
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Alm.Shared.CodeAnalysisServer/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Alm.Shared.CodeAnalysisServer.dll
+----------------------------------------
+Microsoft.VisualStudio.CodeSense.ReferencesProvider
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/CodeSense/Providers/ReferencesProvider/Microsoft.VisualStudio.CodeSense.ReferencesProvider.dll
+----------------------------------------
+Microsoft.VisualStudio.Alm.Shared
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Alm.Shared/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Alm.Shared.dll
+----------------------------------------
+Microsoft.VisualStudio.CodeSense
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.CodeSense/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.CodeSense.dll
+----------------------------------------
+Microsoft.TeamFoundation.CodeSense.Client
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/CodeSense/Providers/CollaborationProvider/Microsoft.TeamFoundation.CodeSense.Client.dll
+----------------------------------------
+Microsoft.VisualStudio.CodeSense.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.CodeSense.Common/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.CodeSense.Common.dll
+----------------------------------------
+Microsoft.VisualStudio.CodeSense.Git.Collaboration.Service
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/CodeSense/Providers/GitProvider/Microsoft.VisualStudio.CodeSense.Git.Collaboration.Service.DLL
+----------------------------------------
+Microsoft.CodeSense.Local.Core
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/CODESENSE/PROVIDERS/GITPROVIDER/Microsoft.CodeSense.Local.Core.DLL
+----------------------------------------
+Microsoft.CodeSense.DiffProcessing.Interfaces
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/CODESENSE/PROVIDERS/GITPROVIDER/Microsoft.CodeSense.DiffProcessing.Interfaces.DLL
+----------------------------------------
+Microsoft.TeamFoundation.CodeSense.Client.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.TeamFoundation.CodeSense.Client.Common/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.TeamFoundation.CodeSense.Client.Common.dll
+----------------------------------------
+Microsoft.TeamFoundation.CodeSense.Client.Changes
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/CodeSense/Providers/CollaborationProvider/Microsoft.TeamFoundation.CodeSense.Client.Changes.dll
+----------------------------------------
+Microsoft.CodeSense.Git.Collaboration.Processing
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/CodeSense/Providers/GitProvider/Microsoft.CodeSense.Git.Collaboration.Processing.DLL
+----------------------------------------
+Microsoft.CodeSense.DiffProcessing
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/CODESENSE/PROVIDERS/GITPROVIDER/Microsoft.CodeSense.DiffProcessing.DLL
+----------------------------------------
+Microsoft.CodeAnalysis.VisualBasic
+    Assembly Version: 1.0.0.0
+    Win32 Version: 1.0.0.50618
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.CodeAnalysis.VisualBasic.DLL
+----------------------------------------
+MySql.Parser
+    Assembly Version: 1.2.4.0
+    Win32 Version: 1.2.4.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Oracle/MySQL%20for%20Visual%20Studio/1.2.4/MySql.Parser.DLL
+----------------------------------------
+Antlr3.Runtime
+    Assembly Version: 3.3.1.7705
+    Win32 Version: 3.3.1.7705
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Oracle/MySQL%20for%20Visual%20Studio/1.2.4/Antlr3.Runtime.DLL
+----------------------------------------
+Microsoft.VisualStudio.JSON.Package
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/Editors/Microsoft.VisualStudio.JSON.Package.dll
+----------------------------------------
+Microsoft.VisualStudio.Html.Package
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/Editors/Microsoft.VisualStudio.Html.Package.dll
+----------------------------------------
+Microsoft.VisualStudio.Web.HTML
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Web.HTML/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Web.HTML.dll
+----------------------------------------
+Microsoft.VisualStudio.Web
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Web/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Web.dll
+----------------------------------------
+Microsoft.Html.Editor
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/Editors/Microsoft.Html.Editor.dll
+----------------------------------------
+Microsoft.CSS.Editor
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.60711.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/Microsoft/Web%20Tools/Editors/Microsoft.CSS.Editor.dll
+----------------------------------------
+PresentationUI
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.0.30319.33440 built by: FX45W81RTMREL
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/PresentationUI/v4.0_4.0.0.0__31bf3856ad364e35/PresentationUI.dll
+----------------------------------------
+Microsoft.VisualStudio.TeamFoundation.WorkItemTracking
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/DDX3OOVX.NPY/Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll
+----------------------------------------
+Microsoft.TeamFoundation.WorkItemTracking.Client
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/DDX3OOVX.NPY/Microsoft.TeamFoundation.WorkItemTracking.Client.DLL
+----------------------------------------
+Microsoft.TeamFoundation.WorkItemTracking.Controls
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/DDX3OOVX.NPY/Microsoft.TeamFoundation.WorkItemTracking.Controls.DLL
+----------------------------------------
+Microsoft.TeamFoundation.WorkItemTracking.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/DDX3OOVX.NPY/Microsoft.TeamFoundation.WorkItemTracking.Common.DLL
+----------------------------------------
+GitHub.Api
+    Assembly Version: 1.0.12.1
+    Win32 Version: 1.0.12.1
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/31RRNRZN.1U3/GitHub.Api.dll
+----------------------------------------
+GitHub.UI
+    Assembly Version: 1.0.12.1
+    Win32 Version: 1.0.12.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/31rrnrzn.1u3/GitHub.UI.DLL
+----------------------------------------
+GitHub.Extensions
+    Assembly Version: 1.0.12.1
+    Win32 Version: 1.0.12.1
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Extensions/31rrnrzn.1u3/GitHub.Extensions.DLL
+----------------------------------------
+Microsoft.TeamFoundation.TeamExplorer.Navigation
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/DDX3OOVX.NPY/Microsoft.TeamFoundation.TeamExplorer.Navigation.dll
+----------------------------------------
+PreEmptive.Analytics.Aggregator.VSPackage.TeamFoundation.14.0
+    Assembly Version: 1.2.5134.1
+    Win32 Version: 1.2.5134.1
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/PREEMPTIVE%20SOLUTIONS/PREEMPTIVE%20ANALYTICS%20AGGREGATOR%20VISUALIZER/1.2/PreEmptive.Analytics.Aggregator.VSPackage.TeamFoundation.14.0.dll
+----------------------------------------
+PreEmptive.Analytics.Aggregator.Common
+    Assembly Version: 1.2.5134.1
+    Win32 Version: 1.2.5134.1
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/PREEMPTIVE%20SOLUTIONS/PREEMPTIVE%20ANALYTICS%20AGGREGATOR%20VISUALIZER/1.2/PreEmptive.Analytics.Aggregator.Common.DLL
+----------------------------------------
+GitHub.CredentialManagement
+    Assembly Version: 1.0.12.1
+    Win32 Version: 1.0.12.1
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/31RRNRZN.1U3/GitHub.CredentialManagement.DLL
+----------------------------------------
+GitHub.App
+    Assembly Version: 1.0.12.1
+    Win32 Version: 1.0.12.1
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/31RRNRZN.1U3/GitHub.App.dll
+----------------------------------------
+Microsoft.TeamFoundation.WorkItemTracking.ControlsCore
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23102.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/DDX3OOVX.NPY/Microsoft.TeamFoundation.WorkItemTracking.ControlsCore.DLL
+----------------------------------------
+Microsoft.VisualStudio.Data.Providers.SqlServer
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.Data.Providers.SqlServer.DLL
+----------------------------------------
+Microsoft.VisualStudio.Data.Providers.Oracle
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.23107.0 built by: D14REL
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.Data.Providers.Oracle.DLL
+----------------------------------------
+Microsoft.Data.Tools.Schema.Utilities.Sql
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLDB/DAC/120/Microsoft.Data.Tools.Schema.Utilities.Sql.dll
+----------------------------------------
+Microsoft.Data.Tools.Components
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.Data.Tools.Components/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.Data.Tools.Components.dll
+----------------------------------------
+Microsoft.SqlServer.Dac.Extensions
+    Assembly Version: 12.0.0.0
+    Win32 Version: 12.0.3021.1
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLDB/DAC/120/Microsoft.SqlServer.Dac.Extensions.dll
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.Design.Core
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLEDITOR/Microsoft.VisualStudio.Data.Tools.Design.Core.dll
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.Design.Common
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/Microsoft.VisualStudio.Data.Tools.Design.Common.DLL
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.SqlDebugger
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLEDITOR/Microsoft.VisualStudio.Data.Tools.SqlDebugger.dll
+----------------------------------------
+Microsoft.Data.Tools.Com.Interop
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLDB/Microsoft.Data.Tools.Com.Interop.dll
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.Interfaces.1.0
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLDB/Microsoft.VisualStudio.Data.Tools.Interfaces.1.0.DLL
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.SqlObjectExplorer
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLDB/Microsoft.VisualStudio.Data.Tools.SqlObjectExplorer.DLL
+----------------------------------------
+Microsoft.Data.Tools.Design.Core
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.Data.Tools.Design.Core/v4.0_14.0.0.0__b03f5f7f11d50a3a/Microsoft.Data.Tools.Design.Core.dll
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.Package.SqlProfile
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLDB/Microsoft.VisualStudio.Data.Tools.Package.SqlProfile.dll
+----------------------------------------
+Microsoft.Data.Tools.Contracts
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLDB/DAC/120/Microsoft.Data.Tools.Contracts.dll
+----------------------------------------
+Microsoft.Data.Tools.Utilities
+    Assembly Version: 12.0.0.0
+    Win32 Version: 12.0.3021.1
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLDB/DAC/120/Microsoft.Data.Tools.Utilities.dll
+----------------------------------------
+Microsoft.SqlServer.TransactSql.ScriptDom
+    Assembly Version: 12.0.0.0
+    Win32 Version: 12.0.2000.8 ((SQL14_RTM).140220-1752)
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.SqlServer.TransactSql.ScriptDom/v4.0_12.0.0.0__89845dcd8080cc91/Microsoft.SqlServer.TransactSql.ScriptDom.dll
+----------------------------------------
+Microsoft.VisualStudio.Data.Tools.SqlEditor
+    Assembly Version: 14.0.0.0
+    Win32 Version: 14.0.50730.0
+    CodeBase: file:///C:/PROGRAM%20FILES%20(X86)/MICROSOFT%20VISUAL%20STUDIO%2014.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/SQLEDITOR/Microsoft.VisualStudio.Data.Tools.SqlEditor.dll
+----------------------------------------
+Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms
+    Assembly Version: 2.16.0.0
+    Win32 Version: 2.16.20422.1202
+    CodeBase: file:///C:/Program%20Files%20(x86)/Microsoft%20Visual%20Studio%2014.0/Common7/IDE/PrivateAssemblies/Microsoft.IdentityModel.Clients.ActiveDirectory.WindowsForms.DLL
+----------------------------------------
+Microsoft.mshtml
+    Assembly Version: 7.0.3300.0
+    Win32 Version: 7.0.3300.0
+    CodeBase: file:///C:/Windows/assembly/GAC/Microsoft.mshtml/7.0.3300.0__b03f5f7f11d50a3a/Microsoft.mshtml.dll
+----------------------------------------
+System.ServiceModel.Web
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.ServiceModel.Web/v4.0_4.0.0.0__31bf3856ad364e35/System.ServiceModel.Web.dll
+----------------------------------------
+Microsoft.VisualStudio.Diagnostics.ServiceModelSink
+    Assembly Version: 4.0.0.0
+    Win32 Version: 14.0.23107.0
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/Microsoft.VisualStudio.Diagnostics.ServiceModelSink/v4.0_4.0.0.0__b03f5f7f11d50a3a/Microsoft.VisualStudio.Diagnostics.ServiceModelSink.dll
+----------------------------------------
+System.ServiceModel.Channels
+    Assembly Version: 4.0.0.0
+    Win32 Version: 4.6.81.0 built by: NETFXREL2
+    CodeBase: file:///C:/Windows/Microsoft.Net/assembly/GAC_MSIL/System.ServiceModel.Channels/v4.0_4.0.0.0__31bf3856ad364e35/System.ServiceModel.Channels.dll
+----------------------------------------
+Devart.Data.MySql
+    Assembly Version: 8.4.464.0
+    Win32 Version: 8.4.464.0
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Devart.Data.MySql/8.4.464.0__09af7300eec23701/Devart.Data.MySql.dll
+----------------------------------------
+Devart.Data.PostgreSql
+    Assembly Version: 7.4.464.0
+    Win32 Version: 7.4.464.0
+    CodeBase: file:///C:/Windows/assembly/GAC_MSIL/Devart.Data.PostgreSql/7.4.464.0__09af7300eec23701/Devart.Data.PostgreSql.dll
+----------------------------------------
+
+************** JIT Debugging **************
+To enable just-in-time (JIT) debugging, the .config file for this
+application or computer (machine.config) must have the
+jitDebugging value set in the system.windows.forms section.
+The application must also be compiled with debugging
+enabled.
+
+For example:
+
+<configuration>
+    <system.windows.forms jitDebugging="true" />
+</configuration>
+
+When JIT debugging is enabled, any unhandled exception
+will be sent to the JIT debugger registered on the computer
+rather than be handled by this dialog box.

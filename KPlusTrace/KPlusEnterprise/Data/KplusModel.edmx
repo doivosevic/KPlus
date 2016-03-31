@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="kplusModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="hrana">
+          <Key>
+            <PropertyRef Name="datum" />
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="datum" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="code" Type="varchar" MaxLength="40" />
+          <Property Name="name" Type="varchar" MaxLength="400" />
+          <Property Name="amount" Type="int" />
+          <Property Name="currency" Type="varchar" MaxLength="10" />
+          <Property Name="formatted_price" Type="varchar" MaxLength="10" />
+          <Property Name="description" Type="text" />
+          <Property Name="product_path" Type="varchar" MaxLength="200" />
+          <Property Name="image_path" Type="varchar" MaxLength="200" />
+          <Property Name="thumbnail_image_path" Type="varchar" MaxLength="200" />
+          <Property Name="product_details_path" Type="varchar" MaxLength="200" />
+          <Property Name="manufacturer" Type="varchar" MaxLength="400" />
+          <Property Name="sales_unit_of_measure" Type="varchar" MaxLength="20" />
+          <Property Name="quantity_step" Type="double" />
+          <Property Name="min_order_quantity" Type="double" />
+          <Property Name="netto_weight_factor" Type="double" />
+          <Property Name="sliceable" Type="bool" />
+          <Property Name="catch_weight" Type="int" />
+          <Property Name="has_image" Type="bool" />
+          <Property Name="requires_deposit_packaging" Type="bool" />
+          <Property Name="image_s" Type="varchar" MaxLength="200" />
+          <Property Name="image_m" Type="varchar" MaxLength="200" />
+          <Property Name="image_l" Type="varchar" MaxLength="200" />
+          <Property Name="netto_weight" Type="int" />
+          <Property Name="contact_person" Type="varchar" MaxLength="100" />
+          <Property Name="contact_person_address" Type="varchar" MaxLength="100" />
+          <Property Name="allergens_statement" Type="text" />
+          <Property Name="storage_instruction" Type="text" />
+          <Property Name="health_claim" Type="text" />
+          <Property Name="additives_statement" Type="text" />
+          <Property Name="drained_weight" Type="varchar" MaxLength="20" />
+          <Property Name="active" Type="bool" />
+          <Property Name="price_unit_of_measure" Type="varchar" MaxLength="20" />
+          <Property Name="statistical_price" Type="varchar" MaxLength="20" />
+          <Property Name="favorite" Type="bool" />
+          <Property Name="ingredients_statement" Type="text" />
+          <Property Name="manufacturer_address" Type="varchar" MaxLength="400" />
+          <Property Name="nutritional_claim" Type="text" />
+          <Property Name="origin_statement" Type="text" />
+          <Property Name="preparation_instruction" Type="text" />
+          <Property Name="serving_suggestion" Type="text" />
+          <Property Name="storage_instructions" Type="text" />
+          <Property Name="variant_description" Type="text" />
+        </EntityType>
+        <EntityType Name="products_august">
+          <Key>
+            <PropertyRef Name="datum" />
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="my_category" Type="varchar" MaxLength="40" />
+          <Property Name="datum" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="code" Type="varchar" MaxLength="40" />
+          <Property Name="name" Type="varchar" MaxLength="400" />
+          <Property Name="amount" Type="int" />
+          <Property Name="currency" Type="varchar" MaxLength="10" />
+          <Property Name="formatted_price" Type="varchar" MaxLength="10" />
+          <Property Name="description" Type="text" />
+          <Property Name="product_path" Type="varchar" MaxLength="200" />
+          <Property Name="image_path" Type="varchar" MaxLength="200" />
+          <Property Name="thumbnail_image_path" Type="varchar" MaxLength="200" />
+          <Property Name="product_details_path" Type="varchar" MaxLength="200" />
+          <Property Name="manufacturer" Type="varchar" MaxLength="400" />
+          <Property Name="sales_unit_of_measure" Type="varchar" MaxLength="20" />
+          <Property Name="quantity_step" Type="double" />
+          <Property Name="min_order_quantity" Type="double" />
+          <Property Name="netto_weight_factor" Type="double" />
+          <Property Name="sliceable" Type="bool" />
+          <Property Name="catch_weight" Type="int" />
+          <Property Name="has_image" Type="bool" />
+          <Property Name="requires_deposit_packaging" Type="bool" />
+          <Property Name="image_s" Type="varchar" MaxLength="200" />
+          <Property Name="image_m" Type="varchar" MaxLength="200" />
+          <Property Name="image_l" Type="varchar" MaxLength="200" />
+          <Property Name="netto_weight" Type="int" />
+          <Property Name="contact_person" Type="varchar" MaxLength="100" />
+          <Property Name="contact_person_address" Type="varchar" MaxLength="100" />
+          <Property Name="allergens_statement" Type="text" />
+          <Property Name="storage_instruction" Type="text" />
+          <Property Name="health_claim" Type="text" />
+          <Property Name="additives_statement" Type="text" />
+          <Property Name="drained_weight" Type="varchar" MaxLength="20" />
+          <Property Name="active" Type="bool" />
+          <Property Name="price_unit_of_measure" Type="varchar" MaxLength="20" />
+          <Property Name="statistical_price" Type="varchar" MaxLength="20" />
+          <Property Name="favorite" Type="bool" />
+          <Property Name="ingredients_statement" Type="text" />
+          <Property Name="manufacturer_address" Type="varchar" MaxLength="400" />
+          <Property Name="nutritional_claim" Type="text" />
+          <Property Name="origin_statement" Type="text" />
+          <Property Name="preparation_instruction" Type="text" />
+          <Property Name="serving_suggestion" Type="text" />
+          <Property Name="storage_instructions" Type="text" />
+          <Property Name="variant_description" Type="text" />
+          <Property Name="package_id" Type="int" />
+        </EntityType>
+        <EntityContainer Name="kplusModelStoreContainer">
+          <EntitySet Name="hrana" EntityType="Self.hrana" Schema="kplus" store:Type="Tables" />
+          <EntitySet Name="products_august" EntityType="Self.products_august" Schema="kplus" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="kplusModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="hrana">
+          <Key>
+            <PropertyRef Name="datum" />
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="datum" Type="DateTime" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="code" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="name" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="amount" Type="Int32" />
+          <Property Name="currency" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="formatted_price" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="product_path" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="image_path" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="thumbnail_image_path" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="product_details_path" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="manufacturer" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="sales_unit_of_measure" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="quantity_step" Type="Double" />
+          <Property Name="min_order_quantity" Type="Double" />
+          <Property Name="netto_weight_factor" Type="Double" />
+          <Property Name="sliceable" Type="Boolean" />
+          <Property Name="catch_weight" Type="Int32" />
+          <Property Name="has_image" Type="Boolean" />
+          <Property Name="requires_deposit_packaging" Type="Boolean" />
+          <Property Name="image_s" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="image_m" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="image_l" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="netto_weight" Type="Int32" />
+          <Property Name="contact_person" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="contact_person_address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="allergens_statement" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="storage_instruction" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="health_claim" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="additives_statement" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="drained_weight" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="active" Type="Boolean" />
+          <Property Name="price_unit_of_measure" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="statistical_price" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="favorite" Type="Boolean" />
+          <Property Name="ingredients_statement" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="manufacturer_address" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="nutritional_claim" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="origin_statement" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="preparation_instruction" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="serving_suggestion" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="storage_instructions" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="variant_description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="products_august">
+          <Key>
+            <PropertyRef Name="datum" />
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="my_category" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="datum" Type="DateTime" Nullable="false" />
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="code" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="name" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="amount" Type="Int32" />
+          <Property Name="currency" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="formatted_price" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="product_path" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="image_path" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="thumbnail_image_path" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="product_details_path" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="manufacturer" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="sales_unit_of_measure" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="quantity_step" Type="Double" />
+          <Property Name="min_order_quantity" Type="Double" />
+          <Property Name="netto_weight_factor" Type="Double" />
+          <Property Name="sliceable" Type="Boolean" />
+          <Property Name="catch_weight" Type="Int32" />
+          <Property Name="has_image" Type="Boolean" />
+          <Property Name="requires_deposit_packaging" Type="Boolean" />
+          <Property Name="image_s" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="image_m" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="image_l" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="netto_weight" Type="Int32" />
+          <Property Name="contact_person" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="contact_person_address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="allergens_statement" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="storage_instruction" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="health_claim" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="additives_statement" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="drained_weight" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="active" Type="Boolean" />
+          <Property Name="price_unit_of_measure" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="statistical_price" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="favorite" Type="Boolean" />
+          <Property Name="ingredients_statement" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="manufacturer_address" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="nutritional_claim" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="origin_statement" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="preparation_instruction" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="serving_suggestion" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="storage_instructions" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="variant_description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="package_id" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="kplusEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="hrana" EntityType="Self.hrana" />
+          <EntitySet Name="products_august" EntityType="Self.products_august" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="kplusModelStoreContainer" CdmEntityContainer="kplusEntities">
+          <EntitySetMapping Name="hrana">
+            <EntityTypeMapping TypeName="kplusModel.hrana">
+              <MappingFragment StoreEntitySet="hrana">
+                <ScalarProperty Name="datum" ColumnName="datum" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="code" ColumnName="code" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="amount" ColumnName="amount" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+                <ScalarProperty Name="formatted_price" ColumnName="formatted_price" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="product_path" ColumnName="product_path" />
+                <ScalarProperty Name="image_path" ColumnName="image_path" />
+                <ScalarProperty Name="thumbnail_image_path" ColumnName="thumbnail_image_path" />
+                <ScalarProperty Name="product_details_path" ColumnName="product_details_path" />
+                <ScalarProperty Name="manufacturer" ColumnName="manufacturer" />
+                <ScalarProperty Name="sales_unit_of_measure" ColumnName="sales_unit_of_measure" />
+                <ScalarProperty Name="quantity_step" ColumnName="quantity_step" />
+                <ScalarProperty Name="min_order_quantity" ColumnName="min_order_quantity" />
+                <ScalarProperty Name="netto_weight_factor" ColumnName="netto_weight_factor" />
+                <ScalarProperty Name="sliceable" ColumnName="sliceable" />
+                <ScalarProperty Name="catch_weight" ColumnName="catch_weight" />
+                <ScalarProperty Name="has_image" ColumnName="has_image" />
+                <ScalarProperty Name="requires_deposit_packaging" ColumnName="requires_deposit_packaging" />
+                <ScalarProperty Name="image_s" ColumnName="image_s" />
+                <ScalarProperty Name="image_m" ColumnName="image_m" />
+                <ScalarProperty Name="image_l" ColumnName="image_l" />
+                <ScalarProperty Name="netto_weight" ColumnName="netto_weight" />
+                <ScalarProperty Name="contact_person" ColumnName="contact_person" />
+                <ScalarProperty Name="contact_person_address" ColumnName="contact_person_address" />
+                <ScalarProperty Name="allergens_statement" ColumnName="allergens_statement" />
+                <ScalarProperty Name="storage_instruction" ColumnName="storage_instruction" />
+                <ScalarProperty Name="health_claim" ColumnName="health_claim" />
+                <ScalarProperty Name="additives_statement" ColumnName="additives_statement" />
+                <ScalarProperty Name="drained_weight" ColumnName="drained_weight" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="price_unit_of_measure" ColumnName="price_unit_of_measure" />
+                <ScalarProperty Name="statistical_price" ColumnName="statistical_price" />
+                <ScalarProperty Name="favorite" ColumnName="favorite" />
+                <ScalarProperty Name="ingredients_statement" ColumnName="ingredients_statement" />
+                <ScalarProperty Name="manufacturer_address" ColumnName="manufacturer_address" />
+                <ScalarProperty Name="nutritional_claim" ColumnName="nutritional_claim" />
+                <ScalarProperty Name="origin_statement" ColumnName="origin_statement" />
+                <ScalarProperty Name="preparation_instruction" ColumnName="preparation_instruction" />
+                <ScalarProperty Name="serving_suggestion" ColumnName="serving_suggestion" />
+                <ScalarProperty Name="storage_instructions" ColumnName="storage_instructions" />
+                <ScalarProperty Name="variant_description" ColumnName="variant_description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="products_august">
+            <EntityTypeMapping TypeName="kplusModel.products_august">
+              <MappingFragment StoreEntitySet="products_august">
+                <ScalarProperty Name="my_category" ColumnName="my_category" />
+                <ScalarProperty Name="datum" ColumnName="datum" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="code" ColumnName="code" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="amount" ColumnName="amount" />
+                <ScalarProperty Name="currency" ColumnName="currency" />
+                <ScalarProperty Name="formatted_price" ColumnName="formatted_price" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="product_path" ColumnName="product_path" />
+                <ScalarProperty Name="image_path" ColumnName="image_path" />
+                <ScalarProperty Name="thumbnail_image_path" ColumnName="thumbnail_image_path" />
+                <ScalarProperty Name="product_details_path" ColumnName="product_details_path" />
+                <ScalarProperty Name="manufacturer" ColumnName="manufacturer" />
+                <ScalarProperty Name="sales_unit_of_measure" ColumnName="sales_unit_of_measure" />
+                <ScalarProperty Name="quantity_step" ColumnName="quantity_step" />
+                <ScalarProperty Name="min_order_quantity" ColumnName="min_order_quantity" />
+                <ScalarProperty Name="netto_weight_factor" ColumnName="netto_weight_factor" />
+                <ScalarProperty Name="sliceable" ColumnName="sliceable" />
+                <ScalarProperty Name="catch_weight" ColumnName="catch_weight" />
+                <ScalarProperty Name="has_image" ColumnName="has_image" />
+                <ScalarProperty Name="requires_deposit_packaging" ColumnName="requires_deposit_packaging" />
+                <ScalarProperty Name="image_s" ColumnName="image_s" />
+                <ScalarProperty Name="image_m" ColumnName="image_m" />
+                <ScalarProperty Name="image_l" ColumnName="image_l" />
+                <ScalarProperty Name="netto_weight" ColumnName="netto_weight" />
+                <ScalarProperty Name="contact_person" ColumnName="contact_person" />
+                <ScalarProperty Name="contact_person_address" ColumnName="contact_person_address" />
+                <ScalarProperty Name="allergens_statement" ColumnName="allergens_statement" />
+                <ScalarProperty Name="storage_instruction" ColumnName="storage_instruction" />
+                <ScalarProperty Name="health_claim" ColumnName="health_claim" />
+                <ScalarProperty Name="additives_statement" ColumnName="additives_statement" />
+                <ScalarProperty Name="drained_weight" ColumnName="drained_weight" />
+                <ScalarProperty Name="active" ColumnName="active" />
+                <ScalarProperty Name="price_unit_of_measure" ColumnName="price_unit_of_measure" />
+                <ScalarProperty Name="statistical_price" ColumnName="statistical_price" />
+                <ScalarProperty Name="favorite" ColumnName="favorite" />
+                <ScalarProperty Name="ingredients_statement" ColumnName="ingredients_statement" />
+                <ScalarProperty Name="manufacturer_address" ColumnName="manufacturer_address" />
+                <ScalarProperty Name="nutritional_claim" ColumnName="nutritional_claim" />
+                <ScalarProperty Name="origin_statement" ColumnName="origin_statement" />
+                <ScalarProperty Name="preparation_instruction" ColumnName="preparation_instruction" />
+                <ScalarProperty Name="serving_suggestion" ColumnName="serving_suggestion" />
+                <ScalarProperty Name="storage_instructions" ColumnName="storage_instructions" />
+                <ScalarProperty Name="variant_description" ColumnName="variant_description" />
+                <ScalarProperty Name="package_id" ColumnName="package_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
